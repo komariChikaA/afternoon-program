@@ -1,6 +1,16 @@
 /* A local interpretation of the photographed HD references; all marks are ours. */
 @font-face{font-family:Programme Serif;src:url('../assets/generated/ui/reading-serif.woff') format('woff');font-weight:200 900;font-display:swap}
 :root{font-family:Programme Serif,"Noto Serif SC",SimSun,serif;--paper:#f7f4ee;--wine:#641a25;--cream:#ede4d7;--muted:#bcb0a6;--ink:#21181c;--accent:#a35761}
+#asset-loading{position:fixed;inset:0;z-index:2000;display:grid;place-items:center;padding:24px;background:#f7f4ee;color:#6b2632}
+.asset-card{width:min(440px,100%);text-align:center}
+.asset-card h2{font-weight:200;font-size:30px;letter-spacing:.2em;margin:28px 0 20px}
+.asset-eyebrow{font:11px Georgia,serif;letter-spacing:.2em;color:#927575}
+#asset-message{font-size:14px;line-height:1.8;color:#806e67}
+#asset-progress{width:100%;height:3px;accent-color:#842c39;margin-top:18px;border:0;background:#dfd3c8}
+#asset-progress::-webkit-progress-bar{background:#dfd3c8}#asset-progress::-webkit-progress-value{background:#842c39}
+#asset-progress::-moz-progress-bar{background:#842c39}
+#asset-count{font:12px Georgia,serif;letter-spacing:.12em;color:#927575}
+#asset-retry{color:#6b2632;background:transparent;border:1px solid #ae8d8b;min-height:44px;padding:10px 28px;margin-top:16px}
 html,body{background:#100e11}
 #vn-stage{background:#1b1519}
 button{transition:color .18s,background .18s}

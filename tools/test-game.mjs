@@ -20,6 +20,7 @@ try {
  page.on('requestfailed',r=>{const reason=r.failure()?.errorText;if(reason==='net::ERR_ABORTED'&&/gymnopedie-1\.ogg/.test(r.url()))return;errors.push(r.url()+': '+reason);});
  const url=process.env.VNUI_TEST_URL || 'http://127.0.0.1:4173/app.html';
  await page.goto(url,{waitUntil:'load'});
+ await page.waitForFunction(()=>VNAssets.getState().status==='ready',{timeout:90000});
  await page.evaluate(async()=>Promise.all([...document.images].map(i=>i.decode())));
  check(await page.$eval('#title-screen',e=>!e.hidden),'Title appears on initial load');
  await page.screenshot({path:path.join(output,'01-title.png')});
@@ -42,6 +43,7 @@ try {
  while((await state()).mode==='reading' && steps++<1200) {
    const s=await state();visited.push(s.scene);
    const node=await page.evaluate(()=>VN_PROJECT.scenes[VNPlayer.getState().sceneIndex]);
+   if(node.scare)await page.waitForFunction(()=>!AfternoonGame.getState().scareBusy,{timeout:5000});
    if(node.holdMs)await new Promise(r=>setTimeout(r,node.holdMs+60));
    const milestone=node.id==='day1-observe'?'02-program':node.chapter==='afternoon_a'&&node.closeTV?'03-afternoon-a':node.id==='loop2-observe'?'04-repeat':node.chapter==='afternoon_b'&&node.tv==='cartoon'?'05-afternoon-b':node.id==='fear-understanding'?'06-fear':node.id==='home-actions'?'07-home':node.id==='clothes-7'?'08-clothes':null;
    if(milestone&&!captures.has(milestone)) {
@@ -70,7 +72,7 @@ try {
  await page.click('#ending-title-button');check((await state()).mode==='title','Ending returns to title');
  await page.click('#title-load-button');await page.click('#menu-content .save-row:nth-of-type(2) button');
  check((await state()).scene==='day1-observe','Manual save restores scene');
- await page.click('#title-button');await page.reload({waitUntil:'load'});await page.click('#continue-button');
+ await page.click('#title-button');await page.reload({waitUntil:'load'});await page.waitForFunction(()=>VNAssets.getState().status==='ready',{timeout:90000});await page.click('#continue-button');
  check((await state()).scene==='day1-observe','Automatic save survives reload');
  await page.click('#settings-button');await page.select('#menu-content select','38');await page.click('#close-dialog');
  await page.click('#choice-panel button:last-child');
@@ -88,7 +90,7 @@ try {
  check(shocks.length===3,'Exactly three authored jumpscares');
  for(const shot of shocks){
    await page.evaluate(id=>VNPlayer.goToScene(id),shot.id);
-   await page.waitForSelector('.scare-frame',{timeout:2000});
+   await page.waitForFunction(()=>document.querySelector('.scare-frame')&&getComputedStyle(document.querySelector('.scare-frame')).opacity==='1',{timeout:3000});
    check(await page.$eval('.scare-frame',e=>e.complete&&e.naturalWidth>0),'Shock image decodes: '+shot.kind);
    await page.screenshot({path:path.join(output,'shock-'+shot.kind+'.png')});
    await page.waitForFunction(()=>!document.querySelector('.scare-frame')&&!document.getElementById('vn-stage').dataset.scare,{timeout:2500});
@@ -115,6 +117,7 @@ try {
  check(await page.$eval('#vn-stage',e=>e.getBoundingClientRect().width<=innerWidth+1 && e.getBoundingClientRect().height<=innerHeight+1),'Stage fits narrow landscape');
  await page.setViewport({width:1920,height:1080});
  await page.goto(pathToFileURL(path.join(root,'app.html')).href,{waitUntil:'load'});
+ await page.waitForFunction(()=>VNAssets.getState().status==='ready',{timeout:90000});
  check(await page.$eval('#title-screen',e=>!e.hidden),'Double-click file startup works without server');
  await page.click('#start-button');check((await state()).mode==='reading','Direct-file New Game works');
  const engineHashes=JSON.parse(await readFile(path.join(root,'docs/engine-sha256.json'),'utf8'));

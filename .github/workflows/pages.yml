@@ -39,6 +39,7 @@ jobs:
             if curl --fail --silent http://127.0.0.1:4180/ > /dev/null; then break; fi
             sleep 1
           done
+          npm run test:preload
           npm test
           npm run test:responsive
         env:
@@ -54,6 +55,7 @@ jobs:
           path: |
             output/playwright/
             output/responsive/
+            output/preload/
           retention-days: 14
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

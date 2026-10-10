@@ -31,3 +31,4 @@ dialog{border:1px solid #7d8f71;background:#17291e;color:#e0dfc7;width:min(640px
 @keyframes scare-cut{0%,70%{opacity:1;transform:scale(1.06)}71%,100%{opacity:0}}
 @keyframes scare-recoil{0%{transform:translate(-1.1%,.6%) scale(1.035)}23%{transform:translate(.35%,-.25%) scale(1.01)}100%{transform:none}}
 @keyframes cloth-close{0%{transform:scale(.82) translateY(-20%);opacity:1}24%{transform:scale(1.13) translateY(2%)}65%{opacity:1}100%{transform:scale(1.17);opacity:0}}
+.scare-paused .scare-frame,.scare-paused #vn-scene{animation-play-state:paused!important}

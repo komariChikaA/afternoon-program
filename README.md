@@ -10,6 +10,7 @@
 
 也可以在此目录运行 `npm start`，打开 `http://127.0.0.1:4173/app.html`。本地服务只监听 127.0.0.1；默认端口 4173，可通过 `PORT` 环境变量改变。
 
+- 进入时先预加载并解码全部运行图片及三种惊吓音效，完成前无法开始/继续。失败会显示重新载入按钮；惊吓等画面就绪后才开始计时，快进也会等待演出。
 - 点击画面、Space、Enter 推进。正在打字时第一次操作补全文字，第二次推进。
 - 选择点击选项，也支持 Tab 聚焦、Enter 选择。调查选项返回原位置，完成后选择继续。
 - 底部提供回看、存档、读档、设置、标题；Esc 开关设置。
@@ -33,6 +34,7 @@ app.html / game/game.css    标题、阅读 UI、选择和菜单
 engine/                    原 VNUI renderer / animation / interaction，字节不变
 game/game.js               小型剧情控制层：条件文本、选择回流、变量、存档
 game/audio.js              本地 BGM、环境音与单次音效播放
+game/assets.js             去重预加载、解码进度、错误重试和惊吓素材复用
 story/*.json               11 个章节的可编辑源数据
 project.js                 编译后的 VNUI 直接文件脚本桥
 scenes/scene.json           VNUI 场景镜像
@@ -60,12 +62,15 @@ npm start
 npm install  # 只为安装测试用 Puppeteer，游玩无需安装
 npm test
 npm run build:site
+npm run test:preload     # 慢网、失败重试与三处惊吓专项验证
 npm run test:responsive  # 默认需在4180端口提供dist；可用VNUI_TEST_URL修改地址
 ```
 
 测试可复用同仓库 `cake/vn-project/node_modules/puppeteer`。若 Puppeteer 的下载浏览器不可用，设置 `VNUI_BROWSER_PATH` 为本机 Chrome / Chromium 可执行文件绝对路径；也可用 `VNUI_PUPPETEER_PATH` 指定已有 Puppeteer 模块。结果见 `output/playwright/test-results.json`。素材归属和替换策略见 [assets/ASSETS.md](assets/ASSETS.md)，需求映射见 [docs/implementation.md](docs/implementation.md)。
 
 ## 多端与发布
+
+v0.6 加入资源准备页面和失败重试，三处惊吓先解码再演出，等待时不会被 Ctrl/Auto 跳过；切回标题或打开菜单会取消等待中的画面，继续存档会重播尚未完成的惊吓。机制与验证见 [docs/asset-preload.md](docs/asset-preload.md)。
 
 v0.5 参考《壳之少女》HD版公开截图重做界面：纸白摄影主菜单、暗红细宋体大标题与横排菜单；全宽半透明对白、角落图标工具栏、浅色手帐式设置及带场景缩略图的存档页。参考来源和实现见 [docs/ui-reference.md](docs/ui-reference.md)。标题照片合成和本地OFL字体子集可用 `python tools/make-title-art.py` 重建，需Pillow、numpy、fontTools，首次运行需下载公开字体。
 
