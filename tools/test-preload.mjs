@@ -126,6 +126,7 @@ try{
   await page.evaluate(()=>VNAudio.unlock());await page.evaluate(id=>VNPlayer.goToScene(id),shocks[1].id);
   await page.waitForFunction(()=>hits.some(h=>h.kind==='impact'),{timeout:5000});
   check(await page.evaluate(()=>hits.at(-1).decoded),'Recovered shock uses successful decode: '+fault);
+  if(fault==='background'){await page.click('#title-button');check(await page.$eval('.vn-background',e=>e===VNAssets.image('assets/generated/bg/living.svg')&&e.complete&&e.src.includes('vn-retry')),'Returning to title retains successfully decoded retry image');}
   console.log('PASS fault recovery: '+fault);
  }
  // Runtime re-decode failure also waits for retry, without losing its event.
