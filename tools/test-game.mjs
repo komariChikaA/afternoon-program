@@ -8,7 +8,7 @@ let puppeteer;
 try {puppeteer=(await import('puppeteer')).default;}
 catch {puppeteer=(await import(pathToFileURL(process.env.VNUI_PUPPETEER_PATH || path.join(root,'../cake/vn-project/node_modules/puppeteer/lib/esm/puppeteer/puppeteer.js')).href)).default;}
 const output=path.join(root,'output/playwright');await mkdir(output,{recursive:true});
-const browser=await puppeteer.launch({headless:true,executablePath:process.env.VNUI_BROWSER_PATH || undefined,args:['--allow-file-access-from-files']});
+const browser=await puppeteer.launch({headless:true,executablePath:process.env.VNUI_BROWSER_PATH || undefined,args:['--allow-file-access-from-files',...(process.env.CI?['--no-sandbox']:[])]});
 const results=[],errors=[];
 function check(ok,label){results.push({ok:Boolean(ok),label});assert.ok(ok,label);}
 let page;

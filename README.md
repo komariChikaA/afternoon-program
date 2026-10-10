@@ -4,6 +4,8 @@
 
 ## 立即游玩
 
+在线版：**https://komariChikaA.github.io/afternoon-program/**。源码与任务记录：[GitHub 仓库](https://github.com/komariChikaA/afternoon-program)、[发布 Issue #1](https://github.com/komariChikaA/afternoon-program/issues/1)。
+
 双击 `启动游戏.cmd` 或用现代 Chrome / Edge 打开 `app.html`。**不需要 npm install、构建、网络、控制台或开发工具。**
 
 也可以在此目录运行 `npm start`，打开 `http://127.0.0.1:4173/app.html`。本地服务只监听 127.0.0.1；默认端口 4173，可通过 `PORT` 环境变量改变。
@@ -57,6 +59,26 @@ npm start
 # 另一个终端：
 npm install  # 只为安装测试用 Puppeteer，游玩无需安装
 npm test
+npm run build:site
+npm run test:responsive  # 默认需在4180端口提供dist；可用VNUI_TEST_URL修改地址
 ```
 
 测试可复用同仓库 `cake/vn-project/node_modules/puppeteer`。若 Puppeteer 的下载浏览器不可用，设置 `VNUI_BROWSER_PATH` 为本机 Chrome / Chromium 可执行文件绝对路径；也可用 `VNUI_PUPPETEER_PATH` 指定已有 Puppeteer 模块。结果见 `output/playwright/test-results.json`。素材归属和替换策略见 [assets/ASSETS.md](assets/ASSETS.md)，需求映射见 [docs/implementation.md](docs/implementation.md)。
+
+## 多端与发布
+
+v0.4 在手机与平板竖屏上保留完整 16:9 摄影画面，将对白放在画面下方；触控工具分成两行，长对白、调查选项及菜单分别支持滚动。横屏保留舞台构图并放大阅读文字和触控按钮。支持刘海安全区、动态视口与横竖屏切换；切换方向保留当前剧情。手机直接点画面推进，Auto 与已读快进均可用。
+
+GitHub Pages 使用 `.github/workflows/pages.yml`。推送 `main` 后自动编译章节、构建白名单静态包、执行完整游戏与八种视口回归，通过后发布。测试截图作为 Actions artifact 保存14天，不进入公开游戏页面。Pages 的 source 需设为 GitHub Actions。
+
+本地发布包预览（独立终端）：
+
+```powershell
+npm run build:site
+$env:VNUI_SITE_ROOT="$PWD/dist"
+$env:PORT='4180'
+npm start
+# 在另一终端设置VNUI_TEST_URL=http://127.0.0.1:4180/，执行两项测试
+```
+
+发布包入口为 `index.html`，资源采用相对路径，可部署在仓库子路径。存档保存在浏览器本地：线上版与本地版不共享存档。多端验证记录见 [docs/pages-verification.md](docs/pages-verification.md)，线上部署结果与后续验收记录在 Issue #1 中。

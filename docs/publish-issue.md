@@ -13,4 +13,4 @@
 多端浏览器检查及桌面回归通过；Pages部署成功且线上实际访问通过。美术与恐怖感仍待玩家验收，技术交付进入Qualified。
 
 ## Current state
-WIP。正在制作响应式界面、发布包和Pages工作流。
+源需求快照。实时状态、部署结果与验收记录以 [Issue #1](https://github.com/komariChikaA/afternoon-program/issues/1) 为准；适配与构建验证见 [pages-verification.md](pages-verification.md)。

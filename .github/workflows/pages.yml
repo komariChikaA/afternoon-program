@@ -21,10 +21,40 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+          cache: npm
+      - name: Install browser test tools
+        run: npm ci
+        env:
+          PUPPETEER_SKIP_DOWNLOAD: 'true'
       - name: Compile authored story
         run: python3 tools/build-story.py
       - name: Build static publication
         run: node tools/build-site.mjs
+      - name: Verify story and touch layouts before deployment
+        run: |
+          node tools/serve.mjs > /tmp/vnui-site.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          for attempt in $(seq 1 20); do
+            if curl --fail --silent http://127.0.0.1:4180/ > /dev/null; then break; fi
+            sleep 1
+          done
+          npm test
+          npm run test:responsive
+        env:
+          VNUI_SITE_ROOT: ${{ github.workspace }}/dist
+          PORT: '4180'
+          VNUI_TEST_URL: http://127.0.0.1:4180/
+          VNUI_BROWSER_PATH: /usr/bin/google-chrome
+      - name: Save verification evidence
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-verification
+          path: |
+            output/playwright/
+            output/responsive/
+          retention-days: 14
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

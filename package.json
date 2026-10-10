@@ -8,9 +8,10 @@
     "build:story": "python tools/build-story.py",
     "build:site": "node tools/build-site.mjs",
     "test": "node tools/test-game.mjs",
+    "test:responsive": "node tools/test-responsive.mjs",
     "render:frames": "node tools/render-video.mjs"
   },
   "devDependencies": {
-    "puppeteer": "^24.0.0"
+    "puppeteer": "^25.13.0"
   }
 }
