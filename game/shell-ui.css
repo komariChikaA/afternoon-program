@@ -32,7 +32,7 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline-color:#a64
 #credits-button{background:none;color:#806566;border:0;border-bottom:1px solid #bca49b;padding:5px 0;margin:0;font:inherit;white-space:nowrap}
 
 /* Wide wine-black glass, modest text, and icon tools tucked into the lower right. */
-.vn-dialogue{left:0!important;top:77%!important;width:100%!important;height:23%!important;padding:1.1% 6% 4%;border:0;border-top:1px solid #bc929629;background:linear-gradient(90deg,#211116dd,#22141aca)!important;box-shadow:none;color:#f2e9de}
+.vn-dialogue{left:0!important;top:77%!important;width:100%!important;height:23%!important;padding:1.1% 6% 4%;border:0;border-top:1px solid #bc929629;background:linear-gradient(90deg,#211116dd,#22141aca)!important;box-shadow:none;color:#f2e9de;font-family:Programme Serif,"Noto Serif SC",SimSun,serif!important}
 .vn-name{font-size:1.03cqw;min-height:1.3em;line-height:1.4;letter-spacing:.15em;color:#caa2a4;margin-bottom:.5em;font-weight:400}
 .vn-text{font-size:1.5cqw!important;font-weight:400;line-height:1.9;letter-spacing:.025em}
 .vn-next{right:4%;bottom:30%;color:#c7b1ab;font-size:.7cqw}

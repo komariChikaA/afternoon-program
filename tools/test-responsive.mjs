@@ -29,6 +29,7 @@ try{
   await tap('#title-settings-button');await page.select('#menu-content select','0');await tap('#close-dialog');
   await tap('#start-button');
   check(await page.evaluate(()=>AfternoonGame.getState().scene==='prologue-000'),label+' starts by touch');
+  check(await page.$eval('.vn-text',e=>getComputedStyle(e).fontFamily.includes('Programme Serif')&&document.fonts.check('400 17px "Programme Serif"')),label+' reading uses the loaded local serif font');
   await tap('#auto-button');check(await page.evaluate(()=>AfternoonGame.getState().auto),label+' Auto enables');await tap('#auto-button');
   await page.touchscreen.tap(width/2,Math.min(height/3,150));
   check(await page.evaluate(()=>AfternoonGame.getState().scene==='prologue-001'),label+' tap advances');
