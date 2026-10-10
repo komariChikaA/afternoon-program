@@ -47,7 +47,10 @@
     running=false;status=[...records.values()].some(r=>r.status!=='ready')?'error':'ready';
     if(status==='ready'){
       // Repair markup images too, if their original request failed before a retry succeeded.
-      for(const im of document.images){const r=records.get(im.getAttribute('src'));if(r?.image&&im.src!==r.image.src)im.src=r.image.src;}
+      for(const im of [...document.images]){
+        const r=records.get(im.getAttribute('src'));
+        if(r?.image&&im!==r.image){for(const a of im.attributes)if(a.name!=='src')r.image.setAttribute(a.name,a.value);im.replaceWith(r.image);}
+      }
       for(const b of document.querySelectorAll('#toolbar [data-symbol]'))b.style.setProperty('--tool-icon',`url("${image(`assets/generated/ui/${b.dataset.symbol}.svg`).src}")`);
       document.querySelector('link[rel=icon]').href=image('assets/generated/ui/favicon.svg').src;
       resolveReady();

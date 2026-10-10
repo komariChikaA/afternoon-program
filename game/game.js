@@ -209,7 +209,7 @@
     completeLine();mode='title';current=null;stage.classList.remove('fear','pressure');stage.dataset.bg='';
     $('choice-panel').hidden=true;$('ending-screen').hidden=true;$('title-screen').hidden=false;
     for (const id of ['toolbar','reading-header','reading-hint']) $(id).hidden=true;
-    $('vn-scene').replaceChildren();const image=document.createElement('img');image.className='vn-layer vn-background';image.src='assets/generated/bg/living.svg';image.alt='午后的老住宅客厅';$('vn-scene').append(image);
+    $('vn-scene').replaceChildren();const image=assetsReady()?preparedImage('assets/generated/bg/living.svg'):document.createElement('img');image.className='vn-layer vn-background';if(!assetsReady())image.src='assets/generated/bg/living.svg';image.alt='午后的老住宅客厅';$('vn-scene').append(image);
     $('vn-scene').style.transform='none';VNAudio.stop();document.title='下午的节目';assetControls();
   }
   function finish() {
