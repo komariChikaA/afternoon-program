@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VN-UI Editor</title>
+  <link rel="icon" href="../assets/generated/ui/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="editor.css">
+</head>
+<body>
+  <header class="toolbar">
+    <strong>VN-UI Editor</strong>
+    <label>Scene <select id="scene-select"></select></label>
+    <button id="preview-button" type="button">Preview</button>
+    <button id="reset-button" type="button">Reset</button>
+    <button id="import-button" type="button">Import</button>
+    <button id="save-button" type="button">Save project.js</button>
+    <button id="export-button" class="primary" type="button">Export</button>
+    <input id="file-input" type="file" accept=".js,.json,application/json,text/javascript" hidden>
+  </header>
+
+  <main class="workspace">
+    <aside class="panel layer-panel">
+      <h2>Layers</h2>
+      <div id="layer-list"></div>
+      <p class="hint">Select a layer, then drag or use the resize handle on the canvas.</p>
+    </aside>
+
+    <section class="canvas-shell" aria-label="Design canvas">
+      <div id="design-stage" tabindex="0"></div>
+    </section>
+
+    <aside class="panel property-panel">
+      <h2>Properties</h2>
+      <p id="empty-selection">Select a layer to edit it.</p>
+      <form id="property-form" hidden>
+        <label>Name <input id="prop-name" type="text" readonly></label>
+        <div class="grid-2">
+          <label>X <input data-prop="x" type="number" min="-1" max="2" step="0.001"></label>
+          <label>Y <input data-prop="y" type="number" min="-1" max="2" step="0.001"></label>
+          <label>Width <input data-prop="width" type="number" min="0.01" max="2" step="0.001"></label>
+          <label>Height <input data-prop="height" type="number" min="0.01" max="2" step="0.001"></label>
+        </div>
+        <label>Opacity <input data-prop="opacity" type="range" min="0" max="1" step="0.01"></label>
+        <output id="opacity-value"></output>
+        <label>Color <input data-prop="color" type="color"></label>
+        <label>Blur <input data-prop="blur" type="number" min="0" max="100" step="1"></label>
+        <label>Border radius <input data-prop="radius" type="number" min="0" max="200" step="1"></label>
+        <label>Font <input data-prop="fontFamily" type="text"></label>
+        <label>Font size <input data-prop="fontSize" type="number" min="8" max="160" step="1"></label>
+        <label>Animation
+          <select id="prop-animation">
+            <option value="none">None</option>
+            <option value="fade-in">Fade in</option>
+            <option value="slide-left">Slide left</option>
+            <option value="slide-right">Slide right</option>
+            <option value="shake">Shake</option>
+            <option value="scale-in">Scale in</option>
+            <option value="popup">Popup</option>
+            <option value="glow">Glow</option>
+          </select>
+        </label>
+      </form>
+    </aside>
+  </main>
+
+  <dialog id="export-dialog">
+    <form method="dialog">
+      <div class="dialog-heading"><strong>Export project.js</strong><button value="close" aria-label="Close">×</button></div>
+      <textarea id="export-text" spellcheck="false"></textarea>
+      <div class="dialog-actions"><button id="copy-button" value="none" type="button">Copy</button><button id="download-button" value="none" type="button" class="primary">Download</button></div>
+    </form>
+  </dialog>
+
+  <script src="../project.js"></script>
+  <script src="editor.js"></script>
+</body>
+</html>

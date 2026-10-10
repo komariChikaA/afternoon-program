@@ -1,0 +1,7 @@
+{
+  "id": "minimal",
+  "colors": { "surface": "#ffffff", "accent": "#111827", "text": "#111827" },
+  "typography": { "family": "system-ui, sans-serif", "nameWeight": 650 },
+  "panel": { "opacity": 0.96, "blur": 0, "radius": 12 },
+  "motion": { "enter": "fade-in", "duration": 180, "easing": "ease-out" }
+}

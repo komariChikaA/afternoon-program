@@ -1,0 +1,545 @@
+[
+  {
+    "bg": "stairs-blood",
+    "location": "楼梯",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "speaker": "",
+    "text": "我带着杯子下楼。第五级楼梯有血。"
+  },
+  {
+    "bg": "stairs-blood",
+    "location": "楼梯",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "speaker": "",
+    "text": "血沿着木纹，细细地流进两块板之间。我的拖鞋避开那条线。"
+  },
+  {
+    "bg": "stairs-blood",
+    "location": "楼梯",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "speaker": "",
+    "text": "扶手上有一点湿的东西。我把杯子换到另一只手里。"
+  },
+  {
+    "bg": "stairs-blood",
+    "location": "楼梯",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "speaker": "",
+    "text": "楼下舅公在喊话。喊完停一会儿，又接着喊。"
+  },
+  {
+    "bg": "stairs-blood",
+    "location": "楼梯",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "speaker": "舅公",
+    "text": "坐好啊。还没到你。"
+  },
+  {
+    "bg": "stairs-blood",
+    "location": "楼梯",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "speaker": "",
+    "text": "我继续往下走。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "speaker": "",
+    "text": "灰蓝外套摊在地上。左边口袋的白线朝着我。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "speaker": "",
+    "text": "围巾搭在桌角，衬衣落在椅子旁。我绕过那双鞋。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "speaker": "",
+    "text": "椅子后面露着几根手指，衬衣遮住了其余的部分。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "speaker": "",
+    "text": "电视仍然开着。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "speaker": "",
+    "text": "两个老人，一左一右。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "speaker": "",
+    "text": "这次他们是画出来的。灰蓝的衣服，浅褐的衣服，坐得端正。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "speaker": "",
+    "text": "两张脸都用线描过。眼睛画得很黑。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "speaker": "",
+    "text": "画面忽然切近。他们还是看着镜头。",
+    "scare": "tv",
+    "holdMs": 1250
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "speaker": "",
+    "text": "中间还是那张小桌子。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "speaker": "舅公",
+    "text": "别动！都说了，轮到你再动。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "speaker": "",
+    "text": "他喊得很响，还是没看我。他正低头摆弄桌上那团布。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "speaker": "",
+    "text": "桌边有一个很小的包裹。边角露出一点灰绿色，跟麦子的毛差不多。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "speaker": "",
+    "text": "他把布折进去，展开，又折了一次。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "speaker": "舅公",
+    "text": "怎么还弄不完。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "speaker": "",
+    "text": "我把杯子放到桌子干净的地方。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "speaker": "我",
+    "text": "我准备回家了。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "speaker": "舅公",
+    "text": "嗯。钥匙放门边。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "speaker": "",
+    "text": "我掏出手机，想跟母亲说一声。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "character": {
+      "src": "assets/generated/characters/mugi-wounded.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "",
+    "text": "厨房门口有爪子碰到地面的声音。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "character": {
+      "src": "assets/generated/characters/mugi-wounded.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "",
+    "text": "麦子站了起来。它没有看我，只看桌上那团布。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "character": {
+      "src": "assets/generated/characters/mugi-wounded.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "",
+    "text": "它垂着耳朵，朝桌子走了一步。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "character": {
+      "src": "assets/generated/characters/mugi-wounded.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "",
+    "text": "它身下拖着那条毛巾，已经红透了。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "character": {
+      "src": "assets/generated/characters/mugi-wounded.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "",
+    "text": "它叫了一声。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "character": {
+      "src": "assets/generated/characters/mugi-wounded.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "",
+    "text": "它还在叫。我从没听它这么叫过，嗓子都劈了。",
+    "sfx": "howl"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "character": {
+      "src": "assets/generated/characters/mugi-wounded.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "",
+    "text": "它前脚扒住桌沿，伸向那团布。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "character": {
+      "src": "assets/generated/characters/mugi-wounded.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "",
+    "text": "舅公一把推开它。麦子从桌边摔下去。",
+    "effect": "impact",
+    "holdMs": 1250,
+    "scare": "impact"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "character": {
+      "src": "assets/generated/characters/mugi-wounded.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "",
+    "text": "椅子挪了一点。麦子撞到椅腿，没有立刻起来。",
+    "sfx": "wood"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "character": {
+      "src": "assets/generated/characters/mugi-wounded.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "舅公",
+    "text": "别添乱。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "character": {
+      "src": "assets/generated/characters/mugi-wounded.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "",
+    "text": "我手里还攥着钥匙。麦子又爬了起来。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "character": {
+      "src": "assets/generated/characters/mugi-wounded.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "",
+    "text": "它腹部的毛分开了，里面有一道细红。我把脚往旁边挪了挪。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "character": {
+      "src": "assets/generated/characters/mugi-wounded.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "",
+    "text": "布下露出一只很小的前脚，脚趾分着。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "character": {
+      "src": "assets/generated/characters/mugi-wounded.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "",
+    "text": "我把钥匙放进口袋。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "cartoon",
+    "character": {
+      "src": "assets/generated/characters/mugi-wounded.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "id": "pet-intervene",
+    "speaker": "",
+    "text": "麦子要再扑过去了。我伸出手。",
+    "choices": [
+      {
+        "label": "拉住它",
+        "to": "fear-understanding",
+        "key": "hold",
+        "set": {
+          "held_pet": true
+        }
+      }
+    ]
+  }
+]

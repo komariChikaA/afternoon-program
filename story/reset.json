@@ -1,0 +1,20 @@
+[
+  {
+    "bg": "black",
+    "location": "",
+    "clock": "",
+    "audio": "silence",
+    "speaker": "",
+    "text": " ",
+    "holdMs": 2200
+  },
+  {
+    "bg": "black",
+    "location": "",
+    "clock": "",
+    "audio": "silence",
+    "speaker": "",
+    "text": "门铃响了。",
+    "sfx": "door"
+  }
+]

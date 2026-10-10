@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "mode": "style",
+  "source": {
+    "files": [],
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "notes": [
+      "Replace placeholders with observations from the supplied screenshot."
+    ]
+  },
+  "style": {
+    "category": "visual-novel",
+    "tokens": {
+      "colors": {
+        "surface": "#081020",
+        "accent": "#7dd3fc",
+        "text": "#f8fafc"
+      },
+      "fontFamily": "Inter, system-ui, sans-serif",
+      "radius": 24
+    }
+  },
+  "components": [
+    {
+      "id": "dialogue-box",
+      "name": "Dialogue box",
+      "type": "panel",
+      "zIndex": 30,
+      "geometry": {
+        "normalized": {
+          "x": 0.05,
+          "y": 0.73,
+          "width": 0.9,
+          "height": 0.22
+        },
+        "pixels": {
+          "x": 96,
+          "y": 788,
+          "width": 1728,
+          "height": 238
+        }
+      },
+      "style": {
+        "opacity": 0.88,
+        "radius": 24,
+        "blur": 16
+      },
+      "assetStrategy": "css",
+      "asset": null,
+      "interactions": [
+        "next"
+      ],
+      "animation": "popup",
+      "confidence": 1,
+      "evidence": "Starter placeholder"
+    }
+  ]
+}

@@ -1,0 +1,274 @@
+[
+  {
+    "bg": "guest",
+    "location": "二楼 · 客房",
+    "clock": "星期五 · 08:10",
+    "audio": "house",
+    "speaker": "",
+    "text": "被子压着胳膊，睡麻了。外面有人按喇叭，我才醒。"
+  },
+  {
+    "bg": "guest",
+    "location": "二楼 · 客房",
+    "clock": "星期五 · 08:10",
+    "audio": "house",
+    "speaker": "",
+    "text": "手机显示星期五。母亲说维修的人还没来，可能要再住两天。"
+  },
+  {
+    "bg": "guest",
+    "location": "二楼 · 客房",
+    "clock": "星期五 · 08:10",
+    "audio": "house",
+    "speaker": "",
+    "text": "我回了一个好，把手机放在枕头边。"
+  },
+  {
+    "bg": "guest",
+    "location": "二楼 · 客房",
+    "clock": "星期五 · 08:10",
+    "audio": "house",
+    "speaker": "",
+    "text": "书桌抽屉里只剩灰绿色的蜡笔。纸套上没有牙印了。"
+  },
+  {
+    "bg": "guest",
+    "location": "二楼 · 客房",
+    "clock": "星期五 · 08:10",
+    "audio": "house",
+    "speaker": "",
+    "text": "我把它滚到抽屉里面。楼下没有锅盖的声音，粥却已经煮好。"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期五 · 08:35",
+    "audio": "kitchen",
+    "speaker": "舅公",
+    "text": "粥在锅里。你自己盛，别碰把手。"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期五 · 08:35",
+    "audio": "kitchen",
+    "speaker": "我",
+    "text": "你吃过了？"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期五 · 08:35",
+    "audio": "kitchen",
+    "speaker": "舅公",
+    "text": "早就吃了。我睡不久。"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期五 · 08:35",
+    "audio": "kitchen",
+    "speaker": "",
+    "text": "盐罐下面还压着节目名单。纸上只有三行，每个名字后面都打了勾。"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期五 · 08:35",
+    "audio": "kitchen",
+    "speaker": "",
+    "text": "有一行被反复擦过。纸薄了，桌子的颜色从下面透出来。"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期五 · 08:35",
+    "audio": "kitchen",
+    "speaker": "我",
+    "text": "他们今天来吗？"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期五 · 08:35",
+    "audio": "kitchen",
+    "speaker": "舅公",
+    "text": "他们下午还会来。"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期五 · 08:35",
+    "audio": "kitchen",
+    "speaker": "",
+    "text": "他把衬衣的袖子挽高一点。手腕上的皮肤比手背浅。"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期五 · 08:35",
+    "audio": "kitchen",
+    "speaker": "舅公",
+    "text": "钥匙放门边。路上小心。"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期五 · 08:35",
+    "audio": "kitchen",
+    "speaker": "我",
+    "text": "我还不出去。"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期五 · 08:35",
+    "audio": "kitchen",
+    "speaker": "舅公",
+    "text": "哦。那先吃。"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期五 · 08:35",
+    "audio": "kitchen",
+    "speaker": "",
+    "text": "我没有觉得需要再问什么。他去洗那只已经洗过的锅。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 10:04",
+    "audio": "house",
+    "tv": "drawing",
+    "speaker": "",
+    "text": "椅子上多了两件衣服。一件衬衣，一条叠得很小的裤子。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 10:04",
+    "audio": "house",
+    "tv": "drawing",
+    "speaker": "",
+    "text": "围巾挂在桌角。头朝下垂着，像有人刚起身时忘了拿。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 10:04",
+    "audio": "house",
+    "tv": "drawing",
+    "speaker": "",
+    "text": "电视开着，没有声音。画面里只有两张手绘的脸。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 10:04",
+    "audio": "house",
+    "tv": "drawing",
+    "speaker": "",
+    "text": "左边穿灰蓝的，右边穿浅褐的。脸上能看见一根根线。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 10:04",
+    "audio": "house",
+    "tv": "drawing",
+    "speaker": "",
+    "text": "嘴没有动。左边那个人却像是刚说完昨天剩的面。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 10:04",
+    "audio": "house",
+    "tv": "drawing",
+    "speaker": "",
+    "text": "字幕在画面下方闪了一下，很快就没了。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 10:04",
+    "audio": "house",
+    "tv": "drawing",
+    "speaker": "",
+    "text": "我想找遥控器。椅子底下只有一副眼镜，镜腿折了一条。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 10:04",
+    "audio": "house",
+    "tv": "drawing",
+    "speaker": "",
+    "text": "麦子在厨房门口。它睁着眼，前脚放在肚子上面。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 10:04",
+    "audio": "house",
+    "tv": "drawing",
+    "speaker": "",
+    "text": "我拿了一块饼干，放到它够得着的地方。它没碰。",
+    "variants": [
+      {
+        "flag": "pet_interaction",
+        "value": true,
+        "text": "我把饼干摊在掌心，像之前那样。它认出了我的手，却没有把饼干拿走。"
+      }
+    ]
+  },
+  {
+    "bg": "guest",
+    "location": "二楼 · 客房",
+    "clock": "星期五 · 13:50",
+    "audio": "house",
+    "speaker": "",
+    "text": "午饭以后，我回楼上。门下面有一条光，走到床边就看不见了。"
+  },
+  {
+    "bg": "guest",
+    "location": "二楼 · 客房",
+    "clock": "星期五 · 13:50",
+    "audio": "house",
+    "speaker": "",
+    "text": "楼下有人说左边一点。另一个人没有回答。"
+  },
+  {
+    "bg": "guest",
+    "location": "二楼 · 客房",
+    "clock": "星期五 · 13:50",
+    "audio": "house",
+    "speaker": "",
+    "text": "这一页折过角，我又翻回去看了一遍。"
+  },
+  {
+    "bg": "guest",
+    "location": "二楼 · 客房",
+    "clock": "星期五 · 13:50",
+    "audio": "house",
+    "speaker": "",
+    "text": "钟的秒针卡在顶上，一直往回弹。"
+  },
+  {
+    "bg": "guest",
+    "location": "二楼 · 客房",
+    "clock": "星期五 · 13:50",
+    "audio": "house",
+    "speaker": "",
+    "text": "然后楼下安静下来。"
+  },
+  {
+    "bg": "guest",
+    "location": "二楼 · 客房",
+    "clock": "星期五 · 13:50",
+    "audio": "house",
+    "speaker": "",
+    "text": "这次连椅子移动的声音都没有。"
+  }
+]

@@ -1,0 +1,734 @@
+[
+  {
+    "bg": "outside",
+    "location": "巷口",
+    "clock": "星期四 · 13:48",
+    "audio": "house",
+    "speaker": "",
+    "text": "母亲把地址发来时，只说家里还要修几天，让我去舅公那里住。"
+  },
+  {
+    "bg": "outside",
+    "location": "巷口",
+    "clock": "星期四 · 13:48",
+    "audio": "house",
+    "speaker": "",
+    "text": "我在药店门口下车。软糖的包装换了颜色，还是橘子味的。"
+  },
+  {
+    "bg": "outside",
+    "location": "巷口",
+    "clock": "星期四 · 13:48",
+    "audio": "house",
+    "speaker": "",
+    "text": "走进巷子，门牌末尾的数字掉了半截。"
+  },
+  {
+    "bg": "outside",
+    "location": "巷口",
+    "clock": "星期四 · 13:48",
+    "audio": "house",
+    "speaker": "",
+    "text": "还没按门铃，门就开了。"
+  },
+  {
+    "bg": "outside",
+    "location": "巷口",
+    "clock": "星期四 · 13:48",
+    "audio": "house",
+    "speaker": "舅公",
+    "text": "到了？包给我。"
+  },
+  {
+    "bg": "outside",
+    "location": "巷口",
+    "clock": "星期四 · 13:48",
+    "audio": "house",
+    "speaker": "我",
+    "text": "不重。我自己拿吧。"
+  },
+  {
+    "bg": "outside",
+    "location": "巷口",
+    "clock": "星期四 · 13:48",
+    "audio": "house",
+    "speaker": "舅公",
+    "text": "车上热不热？冰箱里有水果。"
+  },
+  {
+    "bg": "outside",
+    "location": "巷口",
+    "clock": "星期四 · 13:48",
+    "audio": "house",
+    "speaker": "",
+    "text": "他领口的一边翻到里面。我伸手想替他理一下，他已经转身往屋里走。"
+  },
+  {
+    "bg": "outside",
+    "location": "巷口",
+    "clock": "星期四 · 13:48",
+    "audio": "house",
+    "speaker": "舅公",
+    "text": "这几天你就住这里吧。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:06",
+    "audio": "house",
+    "speaker": "舅公",
+    "text": "房间还是楼上那间。被子昨天晒过了。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:06",
+    "audio": "house",
+    "speaker": "我",
+    "text": "我还记得。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:06",
+    "audio": "house",
+    "speaker": "舅公",
+    "text": "你小时候来，也是睡那间。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:06",
+    "audio": "house",
+    "speaker": "",
+    "text": "我把包放在椅子上。椅子没响。舅公却指了指旁边。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:06",
+    "audio": "house",
+    "speaker": "舅公",
+    "text": "那张别坐。坐这个。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:06",
+    "audio": "house",
+    "speaker": "",
+    "text": "门边只摆着两双拖鞋。我穿的这双很新，底下没有砂子。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:06",
+    "audio": "house",
+    "speaker": "",
+    "text": "我又看了眼合照。边上怎么空了那么大一块？"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:06",
+    "audio": "house",
+    "speaker": "",
+    "text": "椅子旁边挂着一件灰蓝外套。袖口磨得发亮，左边口袋有一道白线。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:06",
+    "audio": "house",
+    "speaker": "我",
+    "text": "有人在吗？"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:06",
+    "audio": "house",
+    "speaker": "舅公",
+    "text": "没。先放着，省得找。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:06",
+    "audio": "house",
+    "speaker": "",
+    "text": "电视突然亮了一瞬。里面左边有一个坐着的人，右边的椅子空着。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:06",
+    "audio": "house",
+    "speaker": "",
+    "text": "一下又黑了。我还以为谁碰了开关。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:06",
+    "audio": "house",
+    "speaker": "舅公",
+    "text": "下午他们还要来做节目。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:06",
+    "audio": "house",
+    "speaker": "我",
+    "text": "又来？"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:06",
+    "audio": "house",
+    "speaker": "舅公",
+    "text": "你小时候还看过呢。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:06",
+    "audio": "house",
+    "speaker": "",
+    "text": "他把摄像机拿出来，又去厨房拖出插线板。我给他让了点地方。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:06",
+    "audio": "house",
+    "speaker": "舅公",
+    "text": "这次把杯子放干净的地方。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:06",
+    "audio": "house",
+    "speaker": "我",
+    "text": "什么杯子？"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:06",
+    "audio": "house",
+    "speaker": "舅公",
+    "text": "桌上的。别放边上。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:06",
+    "audio": "house",
+    "speaker": "",
+    "text": "桌上还没有杯子。他打开厨房的门，我也跟进去拿了一个。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "tv": "lowres",
+    "speaker": "",
+    "text": "二姨婆来的时候没有拎豆角。她空着手，还是问我怎么又瘦了。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "tv": "lowres",
+    "speaker": "二姨婆",
+    "text": "是不是不按时吃饭？"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "tv": "lowres",
+    "speaker": "我",
+    "text": "刚在车上吃过。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "tv": "lowres",
+    "speaker": "二姨婆",
+    "text": "车上吃的算什么饭。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "tv": "lowres",
+    "speaker": "",
+    "text": "胡爷爷已经在右边坐下了。我没听见他进门。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "tv": "lowres",
+    "speaker": "",
+    "text": "左边的位子暂时空着。舅公把灰蓝外套搭到那个位子的靠背上。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "tv": "lowres",
+    "speaker": "我",
+    "text": "林爷爷今天不来？"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "tv": "lowres",
+    "speaker": "舅公",
+    "text": "来了。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "tv": "lowres",
+    "speaker": "",
+    "text": "我朝门口看了看。地上只有我和舅公的鞋。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "tv": "lowres",
+    "speaker": "",
+    "text": "电视糊得厉害。左边的椅子在屋里空着，屏幕上倒坐着人。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "tv": "lowres",
+    "speaker": "舅公",
+    "text": "今天的客人，都来齐了。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "tv": "lowres",
+    "speaker": "",
+    "text": "没有人纠正他。他清了清嗓子，把话筒拿近一点。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "tv": "lowres",
+    "speaker": "舅公",
+    "text": "第一个问题。今天中午吃了什么？"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "tv": "lowres",
+    "speaker": "",
+    "text": "左边传来一句：昨天剩的面。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "tv": "lowres",
+    "speaker": "",
+    "text": "是电视里的声音。我把头转过去。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "tv": "lowres",
+    "speaker": "舅公",
+    "text": "那不算今天的。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "tv": "lowres",
+    "speaker": "",
+    "text": "画面停住了。胡爷爷的嘴还张着，人却已经把茶喝完。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "tv": "lowres",
+    "speaker": "",
+    "text": "我没告诉他。他正低头解围巾。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "tv": "still",
+    "id": "loop2-observe",
+    "speaker": "",
+    "text": "舅公在调话筒。大家等着他把声音调小。",
+    "choices": [
+      {
+        "label": "再看一眼合照",
+        "to": "loop2-photo",
+        "key": "photo",
+        "set": {
+          "noticed_missing_relative": true
+        },
+        "hideIf": "noticed_missing_relative"
+      },
+      {
+        "label": "看看电视",
+        "to": "loop2-tv",
+        "key": "tv",
+        "set": {
+          "watched_tv": true
+        }
+      },
+      {
+        "label": "叫麦子过来",
+        "to": "loop2-pet",
+        "key": "pet",
+        "set": {
+          "pet_interaction": true
+        }
+      },
+      {
+        "label": "帮忙收拾饭桌",
+        "to": "loop2-continue",
+        "key": "continue"
+      }
+    ]
+  },
+  {
+    "bg": "photo-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "speaker": "",
+    "text": "合照里只有四个大人。最边上空着，照片边缘还在。",
+    "id": "loop2-photo"
+  },
+  {
+    "bg": "photo-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "speaker": "",
+    "text": "左边那个人的脸上，有几道很细的铅笔线。轮廓比其他人的更清楚。"
+  },
+  {
+    "bg": "photo-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "speaker": "",
+    "text": "我隔着玻璃摸了一下。是画在照片上的，不是相框上。"
+  },
+  {
+    "bg": "photo-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "speaker": "",
+    "text": "我那件小外套还在，袖口的颜色和现在这件很像。",
+    "next": "loop2-observe"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "tv": "outline",
+    "closeTV": true,
+    "speaker": "",
+    "text": "电视上还是两个人，一左一右。图像停着，声音却没停。",
+    "id": "loop2-tv"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "tv": "outline",
+    "closeTV": true,
+    "speaker": "",
+    "text": "左边那个人的脸像被谁顺着眉毛、鼻子和下巴描了一遍。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "tv": "outline",
+    "closeTV": true,
+    "speaker": "",
+    "text": "画面滚了一下，中间多出一个模糊的人影。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "tv": "outline",
+    "closeTV": true,
+    "speaker": "",
+    "text": "我凑过去，已经只剩原来的两个人。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "tv": "outline",
+    "closeTV": true,
+    "speaker": "",
+    "text": "摄像机的镜头罩没摘。边缘上还能看见一条松着的绳子。",
+    "next": "loop2-observe"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "closeTV": false,
+    "character": {
+      "src": "assets/generated/characters/mugi.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "",
+    "text": "我叫麦子。它从厨房门口抬起头，过了很久才站起来。",
+    "id": "loop2-pet"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "closeTV": false,
+    "character": {
+      "src": "assets/generated/characters/mugi.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "",
+    "text": "这次它没有直立。它只把鼻子靠在我的掌心，身子还是贴着地。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "closeTV": false,
+    "character": {
+      "src": "assets/generated/characters/mugi.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "",
+    "text": "腹部的毛被压成一道细缝。它转身时，用前脚护了一下那个地方。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "closeTV": false,
+    "character": {
+      "src": "assets/generated/characters/mugi.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "",
+    "text": "我没碰那道缝。它把额头抵在我手上。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "closeTV": false,
+    "character": {
+      "src": "assets/generated/characters/mugi.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "我",
+    "text": "等会儿再给你饼干。"
+  },
+  {
+    "bg": "living-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期四 · 14:32",
+    "audio": "program",
+    "closeTV": false,
+    "character": {
+      "src": "assets/generated/characters/mugi.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "",
+    "text": "它舔一下我的手指，然后又去厨房门口趴下。",
+    "next": "loop2-observe"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期四 · 16:20",
+    "audio": "kitchen",
+    "closeTV": false,
+    "speaker": "",
+    "text": "厨房的水龙头拧到底也会滴水。我把杯子倒扣在毛巾上。",
+    "id": "loop2-continue"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期四 · 16:20",
+    "audio": "kitchen",
+    "closeTV": false,
+    "speaker": "舅公",
+    "text": "今天煮番茄面。你以前爱吃。"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期四 · 16:20",
+    "audio": "kitchen",
+    "closeTV": false,
+    "speaker": "我",
+    "text": "现在也爱吃。"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期四 · 16:20",
+    "audio": "kitchen",
+    "closeTV": false,
+    "speaker": "",
+    "text": "没有人问放不放葱。他把葱切得很细，全部放进去。"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期四 · 16:20",
+    "audio": "kitchen",
+    "closeTV": false,
+    "speaker": "",
+    "text": "碗底的蓝线比以前长，越过碗沿，连着外面的一小块缺口。"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期四 · 16:20",
+    "audio": "kitchen",
+    "closeTV": false,
+    "speaker": "",
+    "text": "二姨婆坐在桌子另一头。她的椅背上搭着一件男式衬衣。"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期四 · 16:20",
+    "audio": "kitchen",
+    "closeTV": false,
+    "speaker": "",
+    "text": "我问她是谁的。她低头挑出一根葱，说不知道。"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期四 · 16:20",
+    "audio": "kitchen",
+    "closeTV": false,
+    "speaker": "",
+    "text": "吃完饭，电视又自己亮了一下。两个人的脸已经像剪在纸上的形状。"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期四 · 16:20",
+    "audio": "kitchen",
+    "closeTV": false,
+    "speaker": "",
+    "text": "厨房里没有人去关它。等我走过去，它已经暗了。"
+  }
+]

@@ -1,0 +1,90 @@
+/* Keep the photographic stage intact; reflow the reading UI for touch screens. */
+html,body{height:100%;height:100dvh;overscroll-behavior:none}
+button,a,input,select{touch-action:manipulation}
+#credits-button{background:none;color:var(--cream);border:1px solid #85947366;padding:8px 12px;margin:8px 0 0 10px;font-size:inherit}
+dialog{max-height:calc(100dvh - env(safe-area-inset-top) - env(safe-area-inset-bottom) - 24px);overscroll-behavior:contain}
+#menu-content a{color:#d9dfbb;overflow-wrap:anywhere}
+#menu-content input[type=checkbox]{width:22px;height:22px;flex-shrink:0}
+.dialog-top button{min-width:44px;min-height:44px}
+
+@media(max-width:1100px) and (orientation:portrait){
+  #vn-stage{--top:calc(52px + env(safe-area-inset-top));--art:56.25vw;--footer:calc(110px + env(safe-area-inset-bottom));width:100vw!important;height:100dvh!important;background:#101b15}
+  #vn-scene{top:var(--top);height:var(--art);overflow:visible}
+  #atmosphere{bottom:auto;top:var(--top);height:var(--art)}
+  .vn-background{object-fit:fill}
+  .vn-dialogue{left:4%!important;top:calc(var(--art) + 16px)!important;width:92%!important;height:calc(100dvh - var(--top) - var(--art) - var(--footer) - 28px)!important;padding:16px 18px;overflow-y:auto;overscroll-behavior:contain;box-shadow:none}
+  .vn-name{font-size:clamp(15px,2vw,20px);margin-bottom:10px;min-height:20px}
+  .vn-text{font-size:clamp(17px,2.5vw,23px)!important;line-height:1.85;letter-spacing:.035em}
+  .vn-next{font-size:14px;bottom:12px;right:12px}
+  #reading-header{top:calc(14px + env(safe-area-inset-top));left:5%;right:5%;font-size:clamp(12px,2vw,17px);letter-spacing:.04em;gap:10px;white-space:nowrap}
+  #toolbar{left:4%;right:4%;bottom:calc(8px + env(safe-area-inset-bottom));display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;background:#101b15}
+  #toolbar button{font-size:14px;min-height:44px;padding:8px 2px;border:1px solid #71836b55;background:#1b2d22;letter-spacing:.025em;border-radius:3px}
+  #toolbar button[aria-pressed=true]{background:#3a4d33;border:1px solid #c2c19a}
+  #reading-hint{display:none!important}
+  #choice-panel{left:5%;right:5%;top:calc(var(--top) + var(--art) + 94px);bottom:calc(var(--footer) + 8px);gap:8px;align-content:start;overflow-y:auto;overscroll-behavior:contain;padding:3px}
+  #choice-panel button{font-size:16px;min-height:48px;padding:12px 14px;line-height:1.5}
+  .choice-number{margin-right:12px}
+  #vn-stage[data-bg=tv-close] .tv-frame{left:14%;top:0;width:72%;height:90.9%}
+  #toast{font-size:14px;top:calc(var(--top) + 12px);width:max-content;max-width:90%;text-align:center}
+  #title-screen{padding:calc(30px + env(safe-area-inset-top)) 8% calc(20px + env(safe-area-inset-bottom));background:linear-gradient(180deg,#152c20d9,#101b15f9 50%);overflow-y:auto}
+  .title-eyebrow{font-size:14px;letter-spacing:.3em}
+  .title-body{margin-top:5vh;gap:20px}
+  .title-vertical{font-size:12px}
+  h1{font-size:clamp(46px,11vw,88px)}
+  .title-subtitle{font-size:10px;letter-spacing:.15em}
+  .title-menu{margin:5vh 0 0 32px;width:calc(100% - 32px);gap:4px}
+  .title-menu button{font-size:18px;min-height:48px;padding:12px 4px}
+  .title-menu button span{font-size:12px}
+  .title-note{position:static;margin:28px 0 0 32px;font-size:16px;line-height:1.8}
+  .title-note small{font-size:12px;letter-spacing:.04em}
+  .title-warning{position:static;margin:24px 0 0 32px;font-size:12px;line-height:1.8}
+  #credits-button{display:block;margin:12px 0 0;min-height:44px;padding:8px 14px}
+  #ending-screen{padding:24px;gap:12px}
+  #ending-screen h2{font-size:28px}
+  #ending-screen p{font-size:16px}
+  #ending-screen button{font-size:17px;min-height:48px;margin-top:30px}
+  #ending-detail{max-width:90%}
+  dialog{width:calc(100vw - 24px);padding:18px;max-width:640px}
+  #menu-content{font-size:16px}
+  #menu-content label{gap:12px}
+  #menu-content select{max-width:55%}
+  #menu-content button{min-height:44px}
+}
+
+@media(max-width:1100px) and (orientation:landscape){
+  .vn-dialogue{top:61%!important;height:calc(39% - 46px)!important;padding:8px 14px;overflow-y:auto;overscroll-behavior:contain}
+  .vn-name{font-size:13px;min-height:15px;margin-bottom:4px}
+  .vn-text{font-size:16px!important;line-height:1.5;letter-spacing:.025em}
+  .vn-next{font-size:11px;bottom:5px}
+  #toolbar{left:5%;right:5%;bottom:0;gap:6px;justify-content:space-between}
+  #toolbar button{font-size:13px;min-width:44px;min-height:44px;padding:8px 4px;letter-spacing:0}
+  #reading-hint{display:none!important}
+  #reading-header{font-size:12px;top:3%;letter-spacing:.04em}
+  #choice-panel{top:18%;left:25%;right:25%;max-height:40%;gap:6px;overflow-y:auto;padding:3px}
+  #choice-panel button{font-size:15px;min-height:44px;padding:10px 14px}
+  #toast{font-size:13px}
+  #title-screen{padding:5% 6%;overflow-y:auto}
+  .title-eyebrow{font-size:12px}
+  .title-body{margin-top:12px;gap:16px}
+  .title-vertical{font-size:11px}
+  h1{font-size:clamp(34px,6.2cqw,65px)}
+  .title-subtitle{font-size:9px}
+  .title-menu{position:absolute;right:6%;top:12%;margin:0;width:34%;gap:0}
+  .title-menu button{font-size:16px;min-height:44px;padding:8px 2px}
+  .title-menu button span{font-size:11px}
+  .title-note{left:6%;right:auto;top:auto;bottom:9%;font-size:15px;line-height:1.7}
+  .title-note small{font-size:11px}
+  .title-warning{left:auto;right:6%;bottom:6%;width:40%;font-size:11px;line-height:1.6}
+  #credits-button{min-height:44px;margin:6px 0 0;padding:8px}
+  #ending-screen h2{font-size:26px}
+  #ending-screen p{font-size:14px}
+  #ending-screen button{font-size:16px;min-height:44px;margin-top:16px}
+}
+
+@media(max-width:360px) and (orientation:portrait){
+  #reading-header{font-size:11px}
+  .title-body{margin-top:24px}
+  .title-menu{margin-top:24px}
+  .title-note{margin-top:18px}
+  .vn-dialogue{padding:12px 14px}
+}

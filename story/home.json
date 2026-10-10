@@ -1,0 +1,262 @@
+[
+  {
+    "bg": "home",
+    "location": "自己的家 · 玄关",
+    "clock": "星期五 · 18:07",
+    "audio": "home",
+    "speaker": "",
+    "text": "开门时，我看见自己的鞋摆在老位置。"
+  },
+  {
+    "bg": "home",
+    "location": "自己的家 · 玄关",
+    "clock": "星期五 · 18:07",
+    "audio": "home",
+    "speaker": "",
+    "text": "冰箱贴歪了一块。快递盒还在餐桌下面，母亲说回来会收掉的那只。"
+  },
+  {
+    "bg": "home",
+    "location": "自己的家 · 玄关",
+    "clock": "星期五 · 18:07",
+    "audio": "home",
+    "speaker": "",
+    "text": "她今天去外地，要明天才回来。家里没有别人。"
+  },
+  {
+    "bg": "home",
+    "location": "自己的家 · 玄关",
+    "clock": "星期五 · 18:07",
+    "audio": "home",
+    "speaker": "",
+    "text": "我把门合上。这里的门要抬一下才好关，声音比舅公家的轻。"
+  },
+  {
+    "bg": "home",
+    "location": "自己的家 · 玄关",
+    "clock": "星期五 · 18:07",
+    "audio": "home",
+    "speaker": "",
+    "text": "客厅的钟还在走。我看着秒针走完一圈。"
+  },
+  {
+    "bg": "home",
+    "location": "自己的家 · 玄关",
+    "clock": "星期五 · 18:07",
+    "audio": "home",
+    "speaker": "",
+    "text": "我去摸肩上的包带，才想起包没带回来。"
+  },
+  {
+    "bg": "home",
+    "location": "自己的家 · 玄关",
+    "clock": "星期五 · 18:07",
+    "audio": "home",
+    "speaker": "",
+    "text": "没关系。我可以买新的。"
+  },
+  {
+    "bg": "home",
+    "location": "自己的家 · 玄关",
+    "clock": "星期五 · 18:07",
+    "audio": "home",
+    "id": "home-actions",
+    "speaker": "",
+    "text": "我先去检查门锁。",
+    "choices": [
+      {
+        "label": "锁上门",
+        "to": "home-lock",
+        "key": "lock",
+        "set": {
+          "locked_door": true
+        },
+        "hideIf": "locked_door"
+      },
+      {
+        "label": "拉好窗帘",
+        "to": "home-curtain",
+        "key": "curtain",
+        "set": {
+          "closed_curtains": true
+        },
+        "hideIf": "closed_curtains"
+      },
+      {
+        "label": "去洗脸",
+        "to": "home-wash",
+        "key": "wash",
+        "set": {
+          "washed_face": true
+        },
+        "hideIf": "washed_face"
+      },
+      {
+        "label": "上床休息",
+        "to": "home-bed",
+        "key": "sleep"
+      }
+    ]
+  },
+  {
+    "bg": "home",
+    "location": "自己的家 · 玄关",
+    "clock": "星期五 · 18:07",
+    "audio": "home",
+    "speaker": "",
+    "text": "我转了两次锁。锁舌落下去，抵住门框。",
+    "id": "home-lock"
+  },
+  {
+    "bg": "home",
+    "location": "自己的家 · 玄关",
+    "clock": "星期五 · 18:07",
+    "audio": "home",
+    "speaker": "",
+    "text": "再拉一下门把手。门没有动。"
+  },
+  {
+    "bg": "home",
+    "location": "自己的家 · 玄关",
+    "clock": "星期五 · 18:07",
+    "audio": "home",
+    "speaker": "",
+    "text": "我挂好防盗链，拽了一下。",
+    "next": "home-actions",
+    "sfx": "door"
+  },
+  {
+    "bg": "home-curtains",
+    "location": "自己的家 · 卧室",
+    "clock": "星期五 · 18:07",
+    "audio": "home",
+    "speaker": "",
+    "text": "窗帘两边碰到一起。我把中间那条缝拉严。",
+    "id": "home-curtain"
+  },
+  {
+    "bg": "home-curtains",
+    "location": "自己的家 · 卧室",
+    "clock": "星期五 · 18:07",
+    "audio": "home",
+    "speaker": "",
+    "text": "楼下的灯在布上留下一个浅方块，过一会儿，方块也暗了。"
+  },
+  {
+    "bg": "home-curtains",
+    "location": "自己的家 · 卧室",
+    "clock": "星期五 · 18:07",
+    "audio": "home",
+    "speaker": "",
+    "text": "楼下有辆车开走了。",
+    "next": "home-actions"
+  },
+  {
+    "bg": "bathroom",
+    "location": "自己的家 · 卫生间",
+    "clock": "星期五 · 18:07",
+    "audio": "home",
+    "speaker": "",
+    "text": "水从指缝里流过去。我洗了脸，再洗一次手。",
+    "id": "home-wash"
+  },
+  {
+    "bg": "bathroom",
+    "location": "自己的家 · 卫生间",
+    "clock": "星期五 · 18:07",
+    "audio": "home",
+    "speaker": "",
+    "text": "我看了一眼镜子。鼻子下面有道红印，大概是杯沿压的。"
+  },
+  {
+    "bg": "bathroom",
+    "location": "自己的家 · 卫生间",
+    "clock": "星期五 · 18:07",
+    "audio": "home",
+    "speaker": "",
+    "text": "我用毛巾擦掉水。毛巾是我自己的，上面有洗衣液的味道。"
+  },
+  {
+    "bg": "bathroom",
+    "location": "自己的家 · 卫生间",
+    "clock": "星期五 · 18:07",
+    "audio": "home",
+    "speaker": "",
+    "text": "回来的时候忘了买晚饭。我找了两片面包，坐着吃完。",
+    "next": "home-actions"
+  },
+  {
+    "bg": "home-curtains",
+    "location": "自己的家 · 卧室",
+    "clock": "星期五 · 22:41",
+    "audio": "silence",
+    "speaker": "",
+    "text": "我躺到床上，往枕头里缩了缩。",
+    "id": "home-bed"
+  },
+  {
+    "bg": "home-curtains",
+    "location": "自己的家 · 卧室",
+    "clock": "星期五 · 22:41",
+    "audio": "silence",
+    "speaker": "",
+    "text": "手机放在床头，充电的灯亮了。"
+  },
+  {
+    "bg": "home-curtains",
+    "location": "自己的家 · 卧室",
+    "clock": "星期五 · 22:41",
+    "audio": "silence",
+    "speaker": "",
+    "text": "我把手机翻过去。今天不想再看消息了。"
+  },
+  {
+    "bg": "home-curtains",
+    "location": "自己的家 · 卧室",
+    "clock": "星期五 · 22:41",
+    "audio": "silence",
+    "speaker": "",
+    "text": "我拉好被子。衣服懒得换了，明天再说。"
+  },
+  {
+    "bg": "home-curtains",
+    "location": "自己的家 · 卧室",
+    "clock": "星期五 · 22:41",
+    "audio": "silence",
+    "speaker": "",
+    "text": "最后检查了一眼闹钟。星期六，八点半。"
+  },
+  {
+    "bg": "home-curtains",
+    "location": "自己的家 · 卧室",
+    "clock": "星期五 · 22:41",
+    "audio": "silence",
+    "speaker": "",
+    "text": "我关掉床头灯。"
+  },
+  {
+    "bg": "black",
+    "location": "",
+    "clock": "",
+    "audio": "silence",
+    "speaker": "",
+    "text": "房间安静下来。"
+  },
+  {
+    "bg": "black",
+    "location": "",
+    "clock": "",
+    "audio": "silence",
+    "speaker": "",
+    "text": "手总算不抖了。"
+  },
+  {
+    "bg": "black",
+    "location": "",
+    "clock": "",
+    "audio": "silence",
+    "speaker": "",
+    "text": "我睡着了。",
+    "holdMs": 1800
+  }
+]

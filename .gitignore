@@ -1,0 +1,10 @@
+node_modules/
+output/
+frames/
+dist/
+.playwright-cli/
+__pycache__/
+*.pyc
+# Superseded portrait inputs; keep locally but omit from published source.
+assets/source/tv/shibusawa.jpg
+assets/source/tv/fukuzawa.jpg

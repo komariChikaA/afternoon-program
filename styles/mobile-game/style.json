@@ -1,0 +1,7 @@
+{
+  "id": "mobile-game",
+  "colors": { "surface": "#172554", "accent": "#fde047", "text": "#ffffff" },
+  "typography": { "family": "system-ui, sans-serif", "nameWeight": 900 },
+  "panel": { "opacity": 0.94, "blur": 6, "radius": 20 },
+  "motion": { "enter": "popup", "duration": 320, "easing": "cubic-bezier(.2,1.4,.4,1)" }
+}

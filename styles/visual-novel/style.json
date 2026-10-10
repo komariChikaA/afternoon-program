@@ -1,0 +1,7 @@
+{
+  "id": "visual-novel",
+  "colors": { "surface": "#081020", "accent": "#7dd3fc", "text": "#f8fafc" },
+  "typography": { "family": "system-ui, sans-serif", "nameWeight": 800 },
+  "panel": { "opacity": 0.88, "blur": 16, "radius": 24 },
+  "motion": { "enter": "popup", "duration": 450, "easing": "cubic-bezier(.2,1.2,.3,1)" }
+}

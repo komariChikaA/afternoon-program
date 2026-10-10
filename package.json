@@ -1,0 +1,16 @@
+{
+  "name": "afternoon-program",
+  "version": "0.4.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node tools/serve.mjs",
+    "build:story": "python tools/build-story.py",
+    "build:site": "node tools/build-site.mjs",
+    "test": "node tools/test-game.mjs",
+    "render:frames": "node tools/render-video.mjs"
+  },
+  "devDependencies": {
+    "puppeteer": "^24.0.0"
+  }
+}

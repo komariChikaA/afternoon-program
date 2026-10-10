@@ -1,0 +1,488 @@
+[
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "fear",
+    "tv": "cartoon",
+    "fear": true,
+    "character": {
+      "src": "assets/generated/characters/mugi-wounded.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "",
+    "text": "我抓住它的前腿。它死命往前蹬，我另一只手也抱了上去。",
+    "id": "fear-understanding",
+    "effect": "impact"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "fear",
+    "tv": "cartoon",
+    "fear": true,
+    "character": {
+      "src": "assets/generated/characters/mugi-wounded.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "我",
+    "text": "走。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "fear",
+    "tv": "cartoon",
+    "fear": true,
+    "character": {
+      "src": "assets/generated/characters/mugi-wounded.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "",
+    "text": "它喘得很急，嘴张着，一直盯着桌上。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "fear",
+    "tv": "cartoon",
+    "fear": true,
+    "character": {
+      "src": "assets/generated/characters/mugi-wounded.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "我",
+    "text": "再不走你也会死。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "fear",
+    "tv": "cartoon",
+    "fear": true,
+    "character": {
+      "src": "assets/generated/characters/mugi-wounded.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "",
+    "text": "我拖不动它。手上都是汗，突然喘不上气。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "fear",
+    "tv": "cartoon",
+    "fear": true,
+    "character": {
+      "src": "assets/generated/characters/mugi-wounded.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "",
+    "text": "它会死在这里。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "fear",
+    "tv": "cartoon",
+    "fear": true,
+    "character": {
+      "src": "assets/generated/characters/mugi-wounded.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "",
+    "text": "林爷爷在那儿。胡爷爷的鞋，我刚才跨过去了。二姨婆呢？"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "fear",
+    "tv": "cartoon",
+    "fear": true,
+    "character": {
+      "src": "assets/generated/characters/mugi-wounded.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "",
+    "text": "早上她还问我要不要再盛一碗。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "fear",
+    "tv": "cartoon",
+    "fear": true,
+    "character": {
+      "src": "assets/generated/characters/mugi-wounded.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "",
+    "text": "舅公抬头看了我一眼。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "fear",
+    "tv": "cartoon",
+    "fear": true,
+    "character": {
+      "src": "assets/generated/characters/mugi-wounded.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "",
+    "text": "我站在舅公面前。他的手还没放下。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "fear",
+    "tv": "cartoon",
+    "fear": true,
+    "character": {
+      "src": "assets/generated/characters/mugi-wounded.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "",
+    "text": "我往后缩了一点，把钥匙攥在手里。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "fear",
+    "tv": "cartoon",
+    "fear": true,
+    "character": {
+      "src": "assets/generated/characters/mugi-wounded.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "",
+    "text": "电视里的脸靠得太近了。我挪开眼睛，不敢再看。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "fear",
+    "tv": "cartoon",
+    "fear": true,
+    "character": {
+      "src": "assets/generated/characters/mugi-wounded.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "",
+    "text": "麦子咬住我的袖口，往回扯。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "fear",
+    "tv": "cartoon",
+    "fear": true,
+    "character": {
+      "src": "assets/generated/characters/mugi-wounded.svg",
+      "alt": "麦子的占位插画",
+      "style": {
+        "x": 0.56,
+        "y": 0.4,
+        "width": 0.28,
+        "height": 0.31,
+        "opacity": 1
+      },
+      "animation": "none"
+    },
+    "speaker": "",
+    "text": "我松了一点。它挣脱了。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "fear",
+    "tv": "cartoon",
+    "fear": true,
+    "speaker": "",
+    "text": "它又扑向桌边。我没看见落在哪里。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "fear",
+    "tv": "cartoon",
+    "fear": true,
+    "speaker": "",
+    "text": "它的叫声突然断了。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "fear",
+    "tv": "cartoon",
+    "fear": true,
+    "speaker": "",
+    "text": "我的手还伸着，掌心空了。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "fear",
+    "tv": "cartoon",
+    "fear": true,
+    "speaker": "舅公",
+    "text": "别站门口。风大。"
+  },
+  {
+    "bg": "living-blood-repeat",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "fear",
+    "tv": "cartoon",
+    "fear": true,
+    "speaker": "",
+    "text": "我后退一步。门把手碰到手背，凉得让我差点把手收回来。"
+  },
+  {
+    "bg": "outside",
+    "location": "住宅门外",
+    "clock": "下午",
+    "audio": "fear",
+    "fear": true,
+    "speaker": "",
+    "text": "我把门拉开。鞋没有穿好，后跟踩着，一只脚比另一只高。"
+  },
+  {
+    "bg": "outside",
+    "location": "住宅门外",
+    "clock": "下午",
+    "audio": "fear",
+    "fear": true,
+    "speaker": "舅公",
+    "text": "慢点。"
+  },
+  {
+    "bg": "outside",
+    "location": "住宅门外",
+    "clock": "下午",
+    "audio": "fear",
+    "fear": true,
+    "speaker": "",
+    "text": "他没有站起来。"
+  },
+  {
+    "bg": "outside",
+    "location": "住宅门外",
+    "clock": "下午",
+    "audio": "fear",
+    "fear": true,
+    "speaker": "",
+    "text": "门合上时，里面传来布料在地上拖动的声音。"
+  },
+  {
+    "bg": "outside",
+    "location": "住宅门外",
+    "clock": "下午",
+    "audio": "fear",
+    "fear": true,
+    "speaker": "",
+    "text": "我没有跑。先走出巷子，再走过药店，直到能看见公交站的牌子。"
+  },
+  {
+    "bg": "outside",
+    "location": "住宅门外",
+    "clock": "下午",
+    "audio": "fear",
+    "fear": true,
+    "speaker": "",
+    "text": "钥匙硌着腿。我掏出来，才发现还拿着他家的钥匙。"
+  },
+  {
+    "bg": "outside",
+    "location": "住宅门外",
+    "clock": "下午",
+    "audio": "fear",
+    "fear": true,
+    "speaker": "",
+    "text": "我把它放在路边的花坛上，继续走。"
+  },
+  {
+    "bg": "street",
+    "location": "公交站",
+    "clock": "下午",
+    "audio": "quiet",
+    "fear": false,
+    "speaker": "",
+    "text": "车来了。我坐到后排，才把鞋跟穿好。"
+  },
+  {
+    "bg": "street",
+    "location": "公交站",
+    "clock": "下午",
+    "audio": "quiet",
+    "fear": false,
+    "speaker": "",
+    "text": "窗外有人在搬纸箱，有人扶着自行车等绿灯。司机问我在哪一站下。"
+  },
+  {
+    "bg": "street",
+    "location": "公交站",
+    "clock": "下午",
+    "audio": "quiet",
+    "fear": false,
+    "speaker": "我",
+    "text": "终点前一站。"
+  },
+  {
+    "bg": "street",
+    "location": "公交站",
+    "clock": "下午",
+    "audio": "quiet",
+    "fear": false,
+    "speaker": "",
+    "text": "司机没听清，又问了一遍。我提高声音重复。"
+  },
+  {
+    "bg": "street",
+    "location": "公交站",
+    "clock": "下午",
+    "audio": "quiet",
+    "fear": false,
+    "speaker": "",
+    "text": "手机里，母亲说维修已经结束，可以回家。"
+  },
+  {
+    "bg": "street",
+    "location": "公交站",
+    "clock": "下午",
+    "audio": "quiet",
+    "fear": false,
+    "speaker": "",
+    "text": "我把输入框里的“舅公”删掉。最后只回了两个字：来了。"
+  },
+  {
+    "bg": "street",
+    "location": "公交站",
+    "clock": "下午",
+    "audio": "quiet",
+    "fear": false,
+    "speaker": "",
+    "text": "车向前开。我没有往后看。"
+  }
+]

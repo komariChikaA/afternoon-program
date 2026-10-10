@@ -1,0 +1,7 @@
+{
+  "id": "anime",
+  "colors": { "surface": "#fff7fc", "accent": "#f472b6", "text": "#3b2440" },
+  "typography": { "family": "system-ui, sans-serif", "nameWeight": 800 },
+  "panel": { "opacity": 0.92, "blur": 8, "radius": 30 },
+  "motion": { "enter": "scale-in", "duration": 400, "easing": "cubic-bezier(.2,1.2,.3,1)" }
+}

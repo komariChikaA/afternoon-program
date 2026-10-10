@@ -1,0 +1,305 @@
+[
+  {
+    "bg": "guest",
+    "location": "二楼 · 客房",
+    "clock": "星期五 · 08:10",
+    "audio": "house",
+    "speaker": "",
+    "text": "被子压着胳膊，睡麻了。外面有人按喇叭，我才醒。"
+  },
+  {
+    "bg": "guest",
+    "location": "二楼 · 客房",
+    "clock": "星期五 · 08:10",
+    "audio": "house",
+    "speaker": "",
+    "text": "手机显示星期五。母亲说维修的人还没来，可能要再住两天。"
+  },
+  {
+    "bg": "guest",
+    "location": "二楼 · 客房",
+    "clock": "星期五 · 08:10",
+    "audio": "house",
+    "speaker": "",
+    "text": "我回了一个好，把手机放在枕头边。楼下已经有锅盖碰到台面的声音。"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期五 · 08:35",
+    "audio": "kitchen",
+    "speaker": "舅公",
+    "text": "粥在锅里。你自己盛，别碰把手。"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期五 · 08:35",
+    "audio": "kitchen",
+    "speaker": "我",
+    "text": "你吃过了？"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期五 · 08:35",
+    "audio": "kitchen",
+    "speaker": "舅公",
+    "text": "早就吃了。我睡不久。"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期五 · 08:35",
+    "audio": "kitchen",
+    "speaker": "",
+    "text": "他在桌边折一张纸。纸上写着节目名单，每个名字后面画一个小方框。"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期五 · 08:35",
+    "audio": "kitchen",
+    "speaker": "我",
+    "text": "今天还来？"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期五 · 08:35",
+    "audio": "kitchen",
+    "speaker": "舅公",
+    "text": "他们下午会来。上午去买东西了。"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期五 · 08:35",
+    "audio": "kitchen",
+    "speaker": "",
+    "text": "他把名单压在盐罐下面。纸角露出胡爷爷的名字，最后一笔写得很长。"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期五 · 08:35",
+    "audio": "kitchen",
+    "speaker": "舅公",
+    "text": "吃完出去转转也行。钥匙在门边。"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期五 · 08:35",
+    "audio": "kitchen",
+    "speaker": "我",
+    "text": "我先把作业做完。"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期五 · 08:35",
+    "audio": "kitchen",
+    "speaker": "舅公",
+    "text": "那别老盯着屏幕。"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 厨房",
+    "clock": "星期五 · 08:35",
+    "audio": "kitchen",
+    "speaker": "",
+    "text": "我答应一声，继续低头吃。粥太烫了。"
+  },
+  {
+    "bg": "living",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 10:04",
+    "audio": "house",
+    "speaker": "",
+    "text": "舅公出去买菜。我留在楼下，把几扇窗推开一点。"
+  },
+  {
+    "bg": "living",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 10:04",
+    "audio": "house",
+    "speaker": "",
+    "text": "外面有风，屋里还是很闷。"
+  },
+  {
+    "bg": "living",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 10:04",
+    "audio": "house",
+    "speaker": "",
+    "text": "电视柜旁边有一盒录像带。盒上没有片名，只写着几个数字。"
+  },
+  {
+    "bg": "living",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 10:04",
+    "audio": "house",
+    "speaker": "",
+    "text": "我翻了一盒，看不懂标签，又放回去了。"
+  },
+  {
+    "bg": "living",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 10:04",
+    "audio": "house",
+    "speaker": "",
+    "text": "麦子在厨房门口趴着，呼吸慢得像睡熟了。"
+  },
+  {
+    "bg": "living",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 10:04",
+    "audio": "house",
+    "speaker": "",
+    "text": "它身下垫了条毛巾，脏兮兮的。我想拿去洗，它压着不肯起来。"
+  },
+  {
+    "bg": "living",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 10:04",
+    "audio": "house",
+    "speaker": "我",
+    "text": "你也起这么早。"
+  },
+  {
+    "bg": "living",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 10:04",
+    "audio": "house",
+    "speaker": "",
+    "text": "它抬了一下耳朵。风从门缝里进来，把毛巾的一角吹翻了。"
+  },
+  {
+    "bg": "living",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 10:04",
+    "audio": "house",
+    "id": "day2-walk",
+    "speaker": "",
+    "text": "离下午还早。我拿着杯子在一楼转了转。",
+    "choices": [
+      {
+        "label": "看电视柜旁的衣服",
+        "to": "day2-coat",
+        "key": "coat",
+        "set": {
+          "seen_coat": true
+        },
+        "hideIf": "seen_coat"
+      },
+      {
+        "label": "看看节目名单",
+        "to": "day2-list",
+        "key": "list",
+        "set": {
+          "checked_list": true
+        },
+        "hideIf": "checked_list"
+      },
+      {
+        "label": "回客房继续作业",
+        "to": "day2-up",
+        "key": "continue"
+      }
+    ]
+  },
+  {
+    "bg": "living",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 10:04",
+    "audio": "house",
+    "speaker": "",
+    "text": "一件灰蓝外套挂在衣架上。袖口磨得发亮，左边口袋有一道白线。",
+    "id": "day2-coat"
+  },
+  {
+    "bg": "living",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 10:04",
+    "audio": "house",
+    "speaker": "",
+    "text": "我记得他昨天穿走了。舅公买菜还没回来，等会儿问问。"
+  },
+  {
+    "bg": "living",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 10:04",
+    "audio": "house",
+    "speaker": "",
+    "text": "我把滑下来的袖子挂好。布料比想象中厚。",
+    "next": "day2-walk"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 10:04",
+    "audio": "kitchen",
+    "speaker": "",
+    "text": "纸上一共五行：舅公、林爷爷、胡爷爷、二姨婆，还有一个不熟的名字。",
+    "id": "day2-list"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 10:04",
+    "audio": "kitchen",
+    "speaker": "",
+    "text": "那个名字没有勾。旁边写着“下回”，跟其他字的笔迹不一样。"
+  },
+  {
+    "bg": "kitchen",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 10:04",
+    "audio": "kitchen",
+    "speaker": "",
+    "text": "我把盐罐挪回去，没把纸抽出来。",
+    "next": "day2-walk"
+  },
+  {
+    "bg": "guest",
+    "location": "二楼 · 客房",
+    "clock": "星期五 · 13:50",
+    "audio": "house",
+    "speaker": "",
+    "text": "午饭以后，我回楼上。门下面有一条光，走到床边就看不见了。",
+    "id": "day2-up"
+  },
+  {
+    "bg": "guest",
+    "location": "二楼 · 客房",
+    "clock": "星期五 · 13:50",
+    "audio": "house",
+    "speaker": "",
+    "text": "楼下传来椅子移动的声音。有人低声说左边一点，又有人说已经够了。"
+  },
+  {
+    "bg": "guest",
+    "location": "二楼 · 客房",
+    "clock": "星期五 · 13:50",
+    "audio": "house",
+    "speaker": "",
+    "text": "书没看进去几页。窗台上落了一只蛾，我看着它爬到外面。"
+  },
+  {
+    "bg": "guest",
+    "location": "二楼 · 客房",
+    "clock": "星期五 · 13:50",
+    "audio": "house",
+    "speaker": "",
+    "text": "楼下没声音了。"
+  },
+  {
+    "bg": "guest",
+    "location": "二楼 · 客房",
+    "clock": "星期五 · 13:50",
+    "audio": "house",
+    "speaker": "",
+    "text": "刚才还在挪椅子。现在没人说话，电视也没声了。"
+  }
+]

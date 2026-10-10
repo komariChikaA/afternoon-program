@@ -1,0 +1,7 @@
+{
+  "id": "cyberpunk",
+  "colors": { "surface": "#071016", "accent": "#22d3ee", "text": "#ecfeff" },
+  "typography": { "family": "ui-monospace, monospace", "nameWeight": 700 },
+  "panel": { "opacity": 0.9, "blur": 4, "radius": 2 },
+  "motion": { "enter": "glow", "duration": 250, "easing": "steps(3,end)" }
+}

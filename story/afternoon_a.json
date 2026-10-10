@@ -1,0 +1,399 @@
+[
+  {
+    "bg": "guest",
+    "location": "二楼 · 客房",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "speaker": "",
+    "text": "我放下笔。今天的节目开始得有些迟。"
+  },
+  {
+    "bg": "guest",
+    "location": "二楼 · 客房",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "speaker": "",
+    "text": "楼下应该有人的。林爷爷说话时，总要先咳嗽一声。"
+  },
+  {
+    "bg": "guest",
+    "location": "二楼 · 客房",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "speaker": "",
+    "text": "我走到门口，喊了一声。"
+  },
+  {
+    "bg": "guest",
+    "location": "二楼 · 客房",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "speaker": "我",
+    "text": "舅公？"
+  },
+  {
+    "bg": "guest",
+    "location": "二楼 · 客房",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "speaker": "",
+    "text": "没有回答。我拿着杯子往楼梯走。"
+  },
+  {
+    "bg": "stairs-blood",
+    "location": "楼梯",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "speaker": "",
+    "text": "扶手湿了一块。我换了边扶着。"
+  },
+  {
+    "bg": "stairs-blood",
+    "location": "楼梯",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "speaker": "",
+    "text": "第五级台阶上有血，还没干，滴进了板缝。"
+  },
+  {
+    "bg": "stairs-blood",
+    "location": "楼梯",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "speaker": "",
+    "text": "我站了一会儿。杯子有点碍事，换了只手拿。"
+  },
+  {
+    "bg": "stairs-blood",
+    "location": "楼梯",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "speaker": "",
+    "text": "下面的地板上还有。靠近客厅的地方，血已经成了一大片。"
+  },
+  {
+    "bg": "stairs-blood",
+    "location": "楼梯",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "speaker": "",
+    "text": "我踩着旁边下去。木板一响，舅公在下面应了一声。"
+  },
+  {
+    "bg": "living-blood",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "still",
+    "speaker": "",
+    "text": "灰蓝外套摊在地上，里面裹着别的东西。袖口那道白线正朝着我。"
+  },
+  {
+    "bg": "living-blood",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "still",
+    "speaker": "",
+    "text": "胡爷爷的围巾挂在桌角。一双鞋分开放在两边，眼镜架折了一条腿。"
+  },
+  {
+    "bg": "living-blood",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "still",
+    "speaker": "",
+    "text": "椅子旁边的衬衣湿了一半。后面露着几根手指，其余的部分被衣服遮住了。"
+  },
+  {
+    "bg": "living-blood",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "still",
+    "speaker": "",
+    "text": "电视仍然开着。",
+    "effect": "signal",
+    "holdMs": 700,
+    "sfx": "signal"
+  },
+  {
+    "bg": "living-blood",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "still",
+    "speaker": "",
+    "text": "两个老人，一左一右。"
+  },
+  {
+    "bg": "living-blood",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "still",
+    "speaker": "",
+    "text": "林爷爷坐在左边。胡爷爷坐在右边。姿势跟昨天差不多，中间还是那张小桌子。"
+  },
+  {
+    "bg": "living-blood",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "still",
+    "speaker": "",
+    "text": "他们没说话，都看着镜头。"
+  },
+  {
+    "bg": "living-blood",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "still",
+    "speaker": "",
+    "text": "林爷爷没眨眼。我又等了一会儿。"
+  },
+  {
+    "bg": "living-blood",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "still",
+    "speaker": "",
+    "text": "我等他接着问。"
+  },
+  {
+    "bg": "living-blood",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "still",
+    "closeTV": true,
+    "speaker": "",
+    "text": "胡爷爷的围巾还好好地搭在膝盖上。"
+  },
+  {
+    "bg": "living-blood",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "still",
+    "closeTV": true,
+    "speaker": "",
+    "text": "我看了一眼地上的衣服，又抬头看电视。"
+  },
+  {
+    "bg": "living-blood",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "still",
+    "closeTV": true,
+    "speaker": "",
+    "text": "电视底下，摄像机的红灯一直亮着。"
+  },
+  {
+    "bg": "living-blood",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "still",
+    "closeTV": true,
+    "speaker": "",
+    "text": "墙上的钟停在两点三十二分。秒针往前一格，又弹回来。"
+  },
+  {
+    "bg": "living-blood",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "still",
+    "closeTV": false,
+    "speaker": "",
+    "text": "客厅另一侧，舅公背对着我，正在桌边整理什么。"
+  },
+  {
+    "bg": "living-blood",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "still",
+    "closeTV": false,
+    "speaker": "",
+    "text": "他从那人袖口里抽出一团布，放到手边。"
+  },
+  {
+    "bg": "living-blood",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "still",
+    "closeTV": false,
+    "speaker": "",
+    "text": "那人的袖子被拉到了肩膀。舅公抓着衣领，接着往外拽。"
+  },
+  {
+    "bg": "living-blood",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "still",
+    "closeTV": false,
+    "speaker": "",
+    "text": "外套掉到地上。他捡起来搭在椅背上，用脚把鞋拨开。"
+  },
+  {
+    "bg": "living-blood",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "still",
+    "closeTV": false,
+    "speaker": "",
+    "text": "我从杯子里喝了一口水。已经不热了。"
+  },
+  {
+    "bg": "living-blood",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "still",
+    "closeTV": false,
+    "speaker": "我",
+    "text": "我先回去了。"
+  },
+  {
+    "bg": "living-blood",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "still",
+    "closeTV": false,
+    "speaker": "舅公",
+    "text": "嗯。"
+  },
+  {
+    "bg": "living-blood",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "still",
+    "closeTV": false,
+    "speaker": "",
+    "text": "他看过来，手上还搭着一块布。"
+  },
+  {
+    "bg": "living-blood",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "still",
+    "closeTV": false,
+    "speaker": "舅公",
+    "text": "钥匙放门边。路上小心。"
+  },
+  {
+    "bg": "living-blood",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "still",
+    "closeTV": false,
+    "speaker": "我",
+    "text": "好。"
+  },
+  {
+    "bg": "living-blood",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "still",
+    "closeTV": false,
+    "speaker": "",
+    "text": "我找了块没沾血的地方，把杯子放下。先不洗了。"
+  },
+  {
+    "bg": "living-blood",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "still",
+    "closeTV": false,
+    "speaker": "",
+    "text": "出门前，我把拖鞋转向里面。鞋底上沾了一点红色。"
+  },
+  {
+    "bg": "living-blood",
+    "location": "一楼 · 客厅",
+    "clock": "星期五 · 14:32",
+    "audio": "quiet",
+    "tv": "still",
+    "closeTV": false,
+    "speaker": "",
+    "text": "舅公低头接着做他的事。电视里，两个人仍然看着摄像机。"
+  },
+  {
+    "bg": "outside",
+    "location": "住宅门外",
+    "clock": "下午",
+    "audio": "house",
+    "closeTV": false,
+    "speaker": "",
+    "text": "门在背后合上。外面有人骑车经过，车筐里放着一捆葱。"
+  },
+  {
+    "bg": "outside",
+    "location": "住宅门外",
+    "clock": "下午",
+    "audio": "house",
+    "closeTV": false,
+    "speaker": "",
+    "text": "往公交站走的时候，我才在裤子上擦了擦手。"
+  },
+  {
+    "bg": "outside",
+    "location": "住宅门外",
+    "clock": "下午",
+    "audio": "house",
+    "closeTV": false,
+    "speaker": "",
+    "text": "药店门口的钟显示两点三十二分。我按了一下手表，没亮。"
+  },
+  {
+    "bg": "outside",
+    "location": "住宅门外",
+    "clock": "下午",
+    "audio": "house",
+    "closeTV": false,
+    "speaker": "",
+    "text": "先去赶车吧。"
+  },
+  {
+    "bg": "street",
+    "location": "街道",
+    "clock": "下午",
+    "audio": "silence",
+    "closeTV": false,
+    "speaker": "",
+    "text": "我赶到路口，刚好变红灯。"
+  },
+  {
+    "bg": "street",
+    "location": "街道",
+    "clock": "下午",
+    "audio": "silence",
+    "closeTV": false,
+    "speaker": "",
+    "text": "对面的车开过来，我站在路边等它过去。"
+  },
+  {
+    "bg": "street",
+    "location": "街道",
+    "clock": "下午",
+    "audio": "silence",
+    "closeTV": false,
+    "speaker": "",
+    "text": "手机亮了。我点开母亲的消息。"
+  }
+]

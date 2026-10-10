@@ -1,0 +1,223 @@
+[
+  {
+    "bg": "black",
+    "location": "",
+    "clock": "",
+    "audio": "silence",
+    "speaker": "",
+    "text": " ",
+    "holdMs": 1800
+  },
+  {
+    "bg": "black",
+    "location": "",
+    "clock": "",
+    "audio": "silence",
+    "speaker": "舅公",
+    "text": "这些都是你亲戚的东西。"
+  },
+  {
+    "bg": "black",
+    "location": "",
+    "clock": "",
+    "audio": "silence",
+    "speaker": "",
+    "text": "他的声音就在耳边。我没睁开眼。"
+  },
+  {
+    "bg": "black",
+    "location": "",
+    "clock": "",
+    "audio": "pressure",
+    "background": {
+      "src": "assets/generated/cg/clothes-1.svg"
+    },
+    "pressure": true,
+    "speaker": "",
+    "text": "一件衣服落在胸口。布料冰凉，我伸手去拨。",
+    "id": "clothes-1",
+    "holdMs": 1500,
+    "effect": "cloth",
+    "scare": "cloth"
+  },
+  {
+    "bg": "black",
+    "location": "",
+    "clock": "",
+    "audio": "pressure",
+    "background": {
+      "src": "assets/generated/cg/clothes-2.svg"
+    },
+    "pressure": true,
+    "speaker": "",
+    "text": "又一件。袖口擦到下巴，左边口袋上缝着白线。",
+    "id": "clothes-2",
+    "sfx": "cloth",
+    "holdMs": 1000,
+    "effect": "cloth"
+  },
+  {
+    "bg": "black",
+    "location": "",
+    "clock": "",
+    "audio": "pressure",
+    "background": {
+      "src": "assets/generated/cg/clothes-2.svg"
+    },
+    "pressure": true,
+    "speaker": "",
+    "text": "是林爷爷那件。"
+  },
+  {
+    "bg": "black",
+    "location": "",
+    "clock": "",
+    "audio": "pressure",
+    "background": {
+      "src": "assets/generated/cg/clothes-2.svg"
+    },
+    "pressure": true,
+    "speaker": "",
+    "text": "我想坐起来。胸口动不了。"
+  },
+  {
+    "bg": "black",
+    "location": "",
+    "clock": "",
+    "audio": "pressure",
+    "background": {
+      "src": "assets/generated/cg/clothes-3.svg"
+    },
+    "pressure": true,
+    "speaker": "",
+    "text": "又压上来一层。纽扣硌住胸骨，床垫陷下去。",
+    "id": "clothes-3",
+    "sfx": "cloth",
+    "holdMs": 1000,
+    "effect": "cloth"
+  },
+  {
+    "bg": "black",
+    "location": "",
+    "clock": "",
+    "audio": "pressure",
+    "background": {
+      "src": "assets/generated/cg/clothes-4.svg"
+    },
+    "pressure": true,
+    "speaker": "",
+    "text": "衬衣、裤子，接着是围巾。我把头偏向一边。",
+    "id": "clothes-4",
+    "sfx": "cloth",
+    "holdMs": 1000,
+    "effect": "cloth"
+  },
+  {
+    "bg": "black",
+    "location": "",
+    "clock": "",
+    "audio": "pressure",
+    "background": {
+      "src": "assets/generated/cg/clothes-4.svg"
+    },
+    "pressure": true,
+    "speaker": "",
+    "text": "手伸不出去了。"
+  },
+  {
+    "bg": "black",
+    "location": "",
+    "clock": "",
+    "audio": "pressure",
+    "background": {
+      "src": "assets/generated/cg/clothes-4.svg"
+    },
+    "pressure": true,
+    "speaker": "",
+    "text": "别放了。",
+    "variants": [
+      {
+        "flag": "pet_interaction",
+        "value": true,
+        "text": "我把指头一点点往外挪，布却越扯越紧。"
+      }
+    ]
+  },
+  {
+    "bg": "black",
+    "location": "",
+    "clock": "",
+    "audio": "pressure",
+    "background": {
+      "src": "assets/generated/cg/clothes-5.svg"
+    },
+    "pressure": true,
+    "speaker": "",
+    "text": "我把手腕往外抽，袖子一下绷紧了。",
+    "id": "clothes-5",
+    "sfx": "cloth",
+    "holdMs": 1000,
+    "effect": "cloth"
+  },
+  {
+    "bg": "black",
+    "location": "",
+    "clock": "",
+    "audio": "pressure",
+    "background": {
+      "src": "assets/generated/cg/clothes-6.svg"
+    },
+    "pressure": true,
+    "speaker": "",
+    "text": "只剩一条缝。我对着那条缝喘气。",
+    "id": "clothes-6",
+    "sfx": "cloth",
+    "holdMs": 1000,
+    "effect": "cloth"
+  },
+  {
+    "bg": "black",
+    "location": "",
+    "clock": "",
+    "audio": "pressure",
+    "background": {
+      "src": "assets/generated/cg/clothes-7.svg"
+    },
+    "pressure": true,
+    "speaker": "",
+    "text": "布盖住了脸。我咬住衣领，用力往外扯。",
+    "id": "clothes-7",
+    "sfx": "cloth",
+    "holdMs": 1800,
+    "effect": "cloth"
+  },
+  {
+    "bg": "black",
+    "location": "",
+    "clock": "",
+    "audio": "silence",
+    "background": {
+      "src": "assets/generated/bg/black.svg"
+    },
+    "pressure": false,
+    "speaker": "舅公",
+    "text": "下次再来住几天吧。",
+    "effect": "signal",
+    "holdMs": 1000,
+    "sfx": "cloth"
+  },
+  {
+    "bg": "black",
+    "location": "",
+    "clock": "",
+    "audio": "silence",
+    "background": {
+      "src": "assets/generated/bg/black.svg"
+    },
+    "pressure": false,
+    "speaker": "",
+    "text": "",
+    "end": true,
+    "holdMs": 2200
+  }
+]

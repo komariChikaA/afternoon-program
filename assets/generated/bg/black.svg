@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080"><defs>
+<linearGradient id="wall" x2="0" y2="1"><stop stop-color="#cecab5"/><stop offset="1" stop-color="#a7a895"/></linearGradient>
+<linearGradient id="floor" x2="0" y2="1"><stop stop-color="#736e59"/><stop offset="1" stop-color="#3f463d"/></linearGradient>
+<radialGradient id="light"><stop stop-color="#faf0c1" stop-opacity=".4"/><stop offset="1" stop-color="#eddaaa" stop-opacity="0"/></radialGradient>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".6" numOctaves="3" seed="7"/><feColorMatrix type="saturate" values="0"/></filter>
+<pattern id="paper" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 4H8" stroke="#5d6652" stroke-opacity=".06"/></pattern>
+</defs><rect width="1920" height="1080" fill="#080d0b"/></svg>
