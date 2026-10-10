@@ -1,4 +1,4 @@
-# 素材与制作方法（v0.3）
+# 素材与制作方法（v0.5）
 
 所有运行素材已保存本地，游玩不访问素材网站。逐项作者、原始网页、下载地址、授权与修改说明见 source/attribution.json，也可在标题页“素材来源”查看。
 
@@ -34,3 +34,11 @@ make-real-composites.py 对原照片进行裁切、调色、物体抠图、接�
 完整素材再生成顺序：make-art.py → make-media.py → make-photo-art.py → **make-real-composites.py**。最后一步覆盖早期占位图，必须执行。之后运行 build-story.py 将来源表及章节更新同步至运行快照。
 
 本轮没有使用 Photoshop 或 AI 图片生成服务；最终图为本地照片合成。已知限制是抠图边缘、墙面修补及人物静态摄影感，不能当作真实拍摄的家庭录像。
+
+## v0.5 标题与界面
+
+标题 `generated/ui/title-plate.jpg` 以现有真实CRT、衬衣、围巾照片合成，洗淡为纸色，沿用相应源照片作者署名和 CC BY-SA 4.0 派生授权。原稿由 `tools/make-title-art.py` 生成。UI图标是本项目绘制的SVG。
+
+本地字体 `generated/ui/reading-serif.woff` 是 Google / Adobe 的 Noto Serif SC 可变字体子集，SIL Open Font License 1.1，完整授权见 `generated/ui/FONT-OFL.txt`。子集包含当前正文及UI文字，不依赖Google Fonts在线服务。若正文新增字符，可以重新运行标题制作脚本生成字体子集。原字体临时缓存位于Git忽略的 `output/references`。
+
+《壳之少女》公开截图仅作排版和颜色参考，来源与取舍见 `docs/ui-reference.md`；参考截图保留在本机测试目录，不作为游戏资产发布。

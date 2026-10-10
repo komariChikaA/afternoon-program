@@ -1,0 +1,155 @@
+/* A local interpretation of the photographed HD references; all marks are ours. */
+@font-face{font-family:Programme Serif;src:url('../assets/generated/ui/reading-serif.woff') format('woff');font-weight:200 900;font-display:swap}
+:root{font-family:Programme Serif,"Noto Serif SC",SimSun,serif;--paper:#f7f4ee;--wine:#641a25;--cream:#ede4d7;--muted:#bcb0a6;--ink:#21181c;--accent:#a35761}
+html,body{background:#100e11}
+#vn-stage{background:#1b1519}
+button{transition:color .18s,background .18s}
+button:focus-visible,input:focus-visible,select:focus-visible{outline-color:#a64b5a;outline-offset:3px}
+
+/* A pale photographic cover, large spaced Ming lettering and a horizontal menu. */
+#title-screen{padding:0;overflow:hidden;background:var(--paper);color:var(--wine);isolation:isolate}
+.title-plate{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-1;pointer-events:none}
+#title-screen>.title-eyebrow{position:absolute;left:5%;right:5%;top:4%;display:flex;justify-content:space-between;color:#837572;font-size:.72cqw;letter-spacing:.42em}
+#title-screen>.title-eyebrow span{font: .65cqw Georgia,serif;letter-spacing:.22em;color:#a39a92}
+.title-body{position:absolute;top:46%;left:13%;width:74%;margin:0;display:block}
+#title-screen h1{display:flex;justify-content:space-between;align-items:center;font-size:8.1cqw;line-height:1.4;font-weight:200;color:#58131e;letter-spacing:0;text-shadow:none;margin:0}
+#title-screen h1 span{letter-spacing:0}
+.title-rule{position:relative;height:1px;background:linear-gradient(90deg,transparent,#a74d57 7%,#551c25 50%,#a74d57 93%,transparent);margin:0 0 13px}
+.title-rule:before,.title-rule:after{content:'';position:absolute;width:4px;height:4px;top:-1.5px;background:#842c39;transform:rotate(45deg)}
+.title-rule:before{left:6%}.title-rule:after{right:6%}
+.title-subtitle{font: .85cqw Georgia,serif;letter-spacing:.32em;text-align:center;color:#9c7775;margin:0}
+.title-menu{position:absolute;left:21%;right:21%;top:74%;width:auto;margin:0;display:grid;grid-template-columns:repeat(4,1fr);gap:1.7cqw}
+.title-menu button{display:flex;flex-direction:column;align-items:center;justify-content:center;border:0;border-radius:0;background:transparent;padding:8px 2px;min-height:56px;color:#876e70;letter-spacing:.18em;text-align:center;position:relative}
+.title-menu button .menu-label{font:200 1.9cqw Programme Serif,serif;letter-spacing:.30em;color:inherit}
+.title-menu button .menu-en{font: .55cqw Georgia,serif;letter-spacing:.19em;color:#a99b95;margin-top:8px}
+.title-menu button:before{content:'';position:absolute;left:45%;right:45%;bottom:-5px;height:1px;background:#812736;opacity:0;transition:left .2s,right .2s,opacity .2s}
+.title-menu button:hover,.title-menu button:focus-visible{color:#651421;background:#9c435b08;padding-left:2px}
+.title-menu button:hover:before,.title-menu button:focus-visible:before{left:22%;right:22%;opacity:1}
+.title-menu button:disabled{color:#b7aaa5;opacity:.5}
+.title-note{position:absolute;left:0;right:0;top:auto;bottom:9%;margin:0;text-align:center;font-size:.83cqw;letter-spacing:.19em;line-height:1.8;color:#765d5c;text-shadow:none}
+.title-note small{display:block;font: .6cqw Programme Serif,serif;letter-spacing:.13em;color:#a99c95;margin-top:4px}
+.title-warning{position:absolute;left:4%;right:4%;bottom:2%;top:auto;width:auto;margin:0;display:flex;align-items:center;justify-content:center;gap:16px;font: .6cqw Programme Serif,serif;letter-spacing:.04em;color:#806e67;line-height:1.8}
+#credits-button{background:none;color:#806566;border:0;border-bottom:1px solid #bca49b;padding:5px 0;margin:0;font:inherit;white-space:nowrap}
+
+/* Wide wine-black glass, modest text, and icon tools tucked into the lower right. */
+.vn-dialogue{left:0!important;top:77%!important;width:100%!important;height:23%!important;padding:1.1% 6% 4%;border:0;border-top:1px solid #bc929629;background:linear-gradient(90deg,#211116dd,#22141aca)!important;box-shadow:none;color:#f2e9de}
+.vn-name{font-size:1.03cqw;min-height:1.3em;line-height:1.4;letter-spacing:.15em;color:#caa2a4;margin-bottom:.5em;font-weight:400}
+.vn-text{font-size:1.5cqw!important;font-weight:400;line-height:1.9;letter-spacing:.025em}
+.vn-next{right:4%;bottom:30%;color:#c7b1ab;font-size:.7cqw}
+#reading-header{left:4%;right:4%;top:3%;color:#f0e6dd;font-size:.83cqw;letter-spacing:.08em;gap:12px;text-shadow:0 1px 4px #100c10}
+#reading-header:before{content:'';width:5px;height:5px;flex-shrink:0;background:#c68089;transform:rotate(45deg)}
+.header-rule{background:#dec6bc55}
+#toolbar{left:auto;right:4%;bottom:.7%;gap:1cqw;align-items:center}
+#toolbar button{color:#d0c1b8;letter-spacing:.04em;min-width:42px;min-height:42px;font: .66cqw Programme Serif,serif;padding:2px 4px;display:flex;flex-direction:column;align-items:center;gap:3px;border:0}
+#toolbar button:before{content:'';width:17px;height:17px;background:currentColor;mask:var(--tool-icon) center/contain no-repeat}
+#toolbar button:hover{color:#f8e9dd;background:#f0d0bf0a}
+#toolbar button[aria-pressed=true]{color:#e4b6b8;border:0;background:#bd697925}
+#log-button{--tool-icon:url('../assets/generated/ui/history.svg')}
+#save-button{--tool-icon:url('../assets/generated/ui/save.svg')}
+#load-button{--tool-icon:url('../assets/generated/ui/load.svg')}
+#auto-button{--tool-icon:url('../assets/generated/ui/auto.svg')}
+#skip-button{--tool-icon:url('../assets/generated/ui/skip.svg')}
+#settings-button{--tool-icon:url('../assets/generated/ui/settings.svg')}
+#title-button{--tool-icon:url('../assets/generated/ui/title.svg')}
+#reading-hint{left:6%;right:auto;bottom:1.8%;color:#a99893;font-size:.65cqw;letter-spacing:.06em}
+#choice-panel{gap:.8cqw}
+#choice-panel button{background:#40141cd9;color:#f0ddd6;border:1px solid #b875795c;box-shadow:none;font-size:1.05cqw;font-weight:400;padding:.9em 1.5em}
+#choice-panel button:hover{background:#772431e8;border-color:#ca8e93}
+.choice-number{color:#b07d80}
+.fear .vn-dialogue{border-color:#b88b8f55}
+.pressure .vn-dialogue{background:linear-gradient(90deg,#110b0feb,#1b1017e6)!important;color:#d8c6c0}
+#ending-screen{background:#100b0eee;color:#e1d1c9}
+#ending-screen button{color:#d3bcb5;border-color:#7b525a}
+#toast{background:#2b1924ef;color:#f1ddd8;font-family:Programme Serif,serif}
+
+/* A cream notebook interior for configuration, save slots and the reading log. */
+dialog{color-scheme:light;width:min(760px,92vw);max-height:85dvh;background:#f3eee6;color:#4d4042;border:1px solid #b4a297;padding:30px 36px;box-shadow:0 20px 90px #10080ad9,inset 0 0 0 6px #f7f4ee,inset 0 0 0 7px #bbaaa15c}
+dialog::backdrop{background:#150b12b8;backdrop-filter:blur(3px)}
+.dialog-top{border-bottom:1px solid #9e75796b;margin-bottom:18px;padding-bottom:10px}
+.dialog-top h2{font:300 26px Programme Serif,serif;color:#6b2632;letter-spacing:.2em}
+.dialog-top button{color:#93636b}
+#menu-content{font:15px/1.8 Programme Serif,serif}
+#menu-content button{background:#f8f3ec;color:#63303b;border:1px solid #ae8d8b;padding:10px 18px}
+#menu-content button:hover{background:#eee0d9;border-color:#8e4859}
+#menu-content label{padding:12px 0;border-bottom:1px solid #bba69b55;margin:0}
+#menu-content input[type=range],#menu-content input[type=checkbox]{accent-color:#8c3a4d}
+#menu-content select{background:#f8f3ec;color:#66303b;border-color:#b59796}
+#menu-content a{color:#853951}
+.menu-note{font-size:12px;color:#96837d}
+.save-row{display:grid;grid-template-columns:104px 180px 1fr;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid #b8a39970}
+.save-preview{position:relative;aspect-ratio:16/9;background:#e4dbd0;border:1px solid #b7a39b;overflow:hidden}
+.save-preview img{width:100%;height:100%;object-fit:cover;filter:saturate(.5)}
+.save-preview span{position:absolute;left:0;bottom:0;font:10px Georgia,serif;padding:3px 5px;letter-spacing:.12em;color:#f6eee4;background:#4d2432c9}
+.save-row p{color:#8d7a73;font-size:13px}
+.log-entry{border-bottom:1px solid #bba69b66;line-height:2;color:#514246}
+.log-entry strong{color:#976271}
+
+@media(max-width:1100px) and (orientation:portrait){
+ #vn-stage{background:#1b1319}
+ .vn-dialogue{left:0!important;top:calc(var(--art) + 12px)!important;width:100%!important;height:calc(100dvh - var(--top) - var(--art) - var(--footer) - 18px)!important;padding:18px 6%;border-top:1px solid #b0858940;background:linear-gradient(180deg,#2a1720,#1b1319)!important}
+ .vn-name{font-size:15px;min-height:21px;margin-bottom:9px}
+ .vn-text{font-size:clamp(17px,2.5vw,23px)!important;line-height:1.85}
+ .vn-next{bottom:12px;right:6%;font-size:12px}
+ #reading-header{top:calc(14px + env(safe-area-inset-top));font-size:12px;gap:8px}
+ #toolbar{left:4%;right:4%;bottom:calc(8px + env(safe-area-inset-bottom));gap:6px;background:#1b1319}
+ #toolbar button{font-size:12px;min-height:44px;padding:5px 2px;gap:2px;border:1px solid #87576445;border-radius:0;background:#2b1b23}
+ #toolbar button:before{width:14px;height:14px}
+ #toolbar button[aria-pressed=true]{border:1px solid #ab707e;background:#75414d66}
+ #choice-panel button{font-size:16px;min-height:48px;padding:12px 14px}
+ #title-screen{padding:0;overflow-y:auto}
+ .title-plate{position:absolute;top:calc(46px + env(safe-area-inset-top));bottom:auto;height:52vh;width:180%;left:-40%;object-fit:cover;object-position:center top}
+ #title-screen>.title-eyebrow{top:calc(20px + env(safe-area-inset-top));left:7%;right:7%;font-size:10px;letter-spacing:.15em;color:#6e615d}
+ #title-screen>.title-eyebrow span{font-size:9px;letter-spacing:.08em}
+ .title-body{position:relative;top:auto;left:auto;width:86%;margin:39vh auto 0}
+ #title-screen h1{font-size:15.5vw;line-height:1.5;font-weight:200}
+ .title-rule{margin-bottom:12px}
+ .title-subtitle{font-size:9px;letter-spacing:.19em}
+ .title-menu{position:relative;top:auto;left:auto;right:auto;width:88%;margin:26px auto 0;gap:4px;grid-template-columns:repeat(4,minmax(0,1fr))}
+ .title-menu button{min-height:60px;padding:6px 0}
+ .title-menu button .menu-label{font-size:22px;letter-spacing:.13em}
+ .title-menu button .menu-en{font-size:8px;letter-spacing:.08em;margin-top:7px}
+ .title-note{position:relative;top:auto;bottom:auto;left:auto;right:auto;margin:26px 0 0;font-size:12px}
+ .title-note small{font-size:10px;margin-top:6px}
+ .title-warning{position:relative;bottom:auto;left:auto;right:auto;width:86%;margin:22px auto 0;padding-bottom:calc(16px + env(safe-area-inset-bottom));flex-direction:column;font-size:10px;gap:8px;text-align:center}
+ #credits-button{display:block;min-height:44px;font-size:11px;padding:8px 12px;margin:0}
+ dialog{width:calc(100vw - 24px);padding:18px 20px}
+ .dialog-top h2{font-size:22px}
+ #menu-content{font-size:16px}
+ .save-row{grid-template-columns:72px minmax(0,1fr);gap:3px 12px;padding:12px 0}
+ .save-preview{grid-row:span 2}
+ .save-row p{padding-bottom:6px;grid-column:2;font-size:11px;overflow-wrap:anywhere}
+ #menu-content .save-row button{font-size:14px;padding:8px 10px;margin:2px 0}
+}
+@media(max-width:1100px) and (orientation:landscape){
+ .vn-dialogue{left:0!important;top:61%!important;height:39%!important;padding:8px 6% 46px}
+ .vn-name{font-size:13px;min-height:15px;margin-bottom:4px}
+ .vn-text{font-size:16px!important;line-height:1.5}
+ .vn-next{font-size:11px;bottom:48px}
+ #toolbar{left:5%;right:5%;bottom:0;gap:6px;justify-content:space-between}
+ #toolbar button{font-size:11px;min-width:44px;min-height:44px;padding:3px 2px;gap:2px}
+ #toolbar button:before{width:13px;height:13px}
+ #reading-header{font-size:12px}
+ #choice-panel button{font-size:15px;min-height:44px;padding:10px 14px}
+ #title-screen{padding:0;overflow:hidden}
+ #title-screen>.title-eyebrow{top:4%;font-size:10px}
+ #title-screen>.title-eyebrow span{font-size:9px}
+ .title-body{top:42%;left:18%;width:64%;margin:0}
+ #title-screen h1{font-size:7.2cqw;line-height:1.4}
+ .title-subtitle{font-size:8px;letter-spacing:.21em}
+ .title-rule{margin-bottom:7px}
+ .title-menu{left:22%;right:22%;top:72%;width:auto;gap:12px;margin:0}
+ .title-menu button{min-height:44px;padding:3px}
+ .title-menu button .menu-label{font-size:19px;letter-spacing:.16em}
+ .title-menu button .menu-en{font-size:7px;margin-top:4px}
+ .title-note{left:4%;right:auto;bottom:12%;top:auto;text-align:left;font-size:10px;letter-spacing:.06em}
+ .title-note small{font-size:8px}
+ .title-warning{bottom:0;left:4%;right:4%;font-size:8px;gap:10px;line-height:1.5}
+ #credits-button{min-height:32px;padding:5px;margin:0;font-size:9px}
+}
+@media(max-width:360px) and (orientation:portrait){
+ #reading-header{font-size:11px}
+ .title-body{margin-top:34vh}
+ .title-menu{margin-top:19px}
+ .title-note{margin-top:18px}
+ .title-warning{margin-top:16px}
+}

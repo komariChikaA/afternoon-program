@@ -194,12 +194,15 @@
     for (const slot of slots) {
       const row=document.createElement('div');row.className='save-row';
       const save=read(slot), valid=validSave(save), label=slot==='auto'?'自动存档':`存档 ${slot.slice(-1)}`;
+      const preview=document.createElement('div');preview.className='save-preview';
+      if(valid){const im=document.createElement('img');im.src=byId.get(save.scene).background?.src||'assets/generated/bg/black.svg';im.alt='';preview.append(im);}
+      const number=document.createElement('span');number.textContent=slot==='auto'?'AUTO':`0${slot.slice(-1)}`;preview.append(number);
       const info=document.createElement('p');
       info.textContent=valid?`${byId.get(save.scene).location || '亲戚家'} · ${new Date(save.time).toLocaleString('zh-CN')}`:save?'存档已损坏':'空槽位';
       const b=button(load?`读取 ${label}`:`保存至 ${label}`,()=> {
         if (load) {restore(read(slot));return;}
         if (write(slot,snapshot())) {toast('进度已保存');saveMenu(false);}
-      });b.disabled=load?!valid:mode!=='reading';row.append(b,info);content.append(row);
+      });b.disabled=load?!valid:mode!=='reading';row.append(preview,b,info);content.append(row);
     }
   }
   function settings() {

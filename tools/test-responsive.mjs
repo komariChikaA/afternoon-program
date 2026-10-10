@@ -18,7 +18,7 @@ async function tap(selector){
  check(hit,'Unobstructed control '+selector);
  await page.touchscreen.tap(b.x+b.width/2,b.y+b.height/2);
 }
-async function capture(name){await page.evaluate(async()=>Promise.all([...document.images].map(i=>i.decode())));await page.screenshot({path:path.join(out,name+'.png')});}
+async function capture(name){await page.evaluate(async()=>{await document.fonts.ready;await Promise.all([...document.images].map(i=>i.decode()));});await page.screenshot({path:path.join(out,name+'.png')});}
 try{
  for(const [width,height] of sizes){
   const label=`${width}x${height}`;page=await browser.newPage();await page.setViewport({width,height,hasTouch:true,isMobile:width<1100,deviceScaleFactor:1});

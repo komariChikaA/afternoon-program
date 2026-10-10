@@ -171,5 +171,14 @@
     "licenseURL": "https://unsplash.com/license",
     "retrieved": "2026-10-10",
     "changes": "Crop, background masking, colour grading and fictional TV compositing. Photograph subjects are unrelated to story characters; ages are not documented."
+  },
+  {
+    "file": "../generated/ui/reading-serif.woff",
+    "title": "Noto Serif SC - local variable font subset",
+    "source": "https://github.com/google/fonts/tree/main/ofl/notoserifsc",
+    "author": "Google Inc. / Adobe",
+    "license": "SIL Open Font License 1.1",
+    "licenseURL": "https://openfontlicense.org/",
+    "changes": "Subset to current story and interface characters; distributed locally as WOFF with full OFL notice."
   }
 ]

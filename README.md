@@ -67,6 +67,8 @@ npm run test:responsive  # 默认需在4180端口提供dist；可用VNUI_TEST_UR
 
 ## 多端与发布
 
+v0.5 参考《壳之少女》HD版公开截图重做界面：纸白摄影主菜单、暗红细宋体大标题与横排菜单；全宽半透明对白、角落图标工具栏、浅色手帐式设置及带场景缩略图的存档页。参考来源和实现见 [docs/ui-reference.md](docs/ui-reference.md)。标题照片合成和本地OFL字体子集可用 `python tools/make-title-art.py` 重建，需Pillow、numpy、fontTools，首次运行需下载公开字体。
+
 v0.4 在手机与平板竖屏上保留完整 16:9 摄影画面，将对白放在画面下方；触控工具分成两行，长对白、调查选项及菜单分别支持滚动。横屏保留舞台构图并放大阅读文字和触控按钮。支持刘海安全区、动态视口与横竖屏切换；切换方向保留当前剧情。手机直接点画面推进，Auto 与已读快进均可用。
 
 GitHub Pages 使用 `.github/workflows/pages.yml`。推送 `main` 后自动编译章节、构建白名单静态包、执行完整游戏与八种视口回归，通过后发布。测试截图作为 Actions artifact 保存14天，不进入公开游戏页面。Pages 的 source 需设为 GitHub Actions。
