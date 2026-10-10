@@ -25,6 +25,7 @@ try{
   page.on('pageerror',e=>errors.push(label+': '+e.message));
   page.on('response',r=>{if(r.status()>=400)errors.push(r.url()+': '+r.status());});
   await page.goto(process.env.VNUI_TEST_URL||'http://127.0.0.1:4180/',{waitUntil:'load'});
+  await page.waitForFunction(()=>VNAssets.getState().status==='ready',{timeout:90000});
   await capture(label+'-title');
   await tap('#title-settings-button');await page.select('#menu-content select','0');await tap('#close-dialog');
   await tap('#start-button');

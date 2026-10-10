@@ -8,7 +8,7 @@
 - 手机按钮至少44px高，竖屏选择至少48px高；对白至少16px。菜单和长内容支持滚动，加入安全区和动态视口支持。
 - `tools/build-site.mjs` 生成白名单静态包，入口 `index.html`；源图、候选素材、测试输出和本机配置不进入网站。
 - 引擎原始SHA256随仓库存储；`engine/*.js -text` 防止Git换行转换改变原始字节。
-- 锁定测试依赖。GitHub Actions 在发布前执行两项浏览器测试，失败则停止发布；截图作为独立artifact保留。
+- 锁定测试依赖。GitHub Actions 在发布前执行三项浏览器测试，失败则停止发布；截图作为独立artifact保留。
 
 ## 本机检查
 
@@ -23,6 +23,10 @@
 
 ## 重跑
 
-`npm ci` 后设置可用浏览器路径 `VNUI_BROWSER_PATH`。运行 `npm run build:story`、`npm run build:site`，以 `VNUI_SITE_ROOT=项目绝对路径/dist`、`PORT=4180` 启动 `npm start`。再以 `VNUI_TEST_URL=http://127.0.0.1:4180/` 执行 `npm test` 与 `npm run test:responsive`。
+`npm ci` 后设置可用浏览器路径 `VNUI_BROWSER_PATH`。运行 `npm run build:story`、`npm run build:site`，以 `VNUI_SITE_ROOT=项目绝对路径/dist`、`PORT=4180` 启动 `npm start`。再以 `VNUI_TEST_URL=http://127.0.0.1:4180/` 执行 `npm run test:preload`、`npm test` 与 `npm run test:responsive`。
 
 本机输出为 `output/playwright` 和 `output/responsive`，均被Git忽略。GitHub Actions提供对应浏览器验证artifact。
+
+## v0.6 资源准备回归
+
+新增45张图片和3种惊吓音效的解码预加载，加载锁、自动/手动重试与惊吓播放接入。预加载专项输出为 `output/preload`，CI 同样保存为独立 artifact。完整剧情仍为452断言、406次操作、395个不同节点；当前多端回归361断言。专项机制与故障注入范围见 [asset-preload.md](asset-preload.md)，最终发布证据记录在 Issue #3。

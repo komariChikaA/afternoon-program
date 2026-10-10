@@ -16,12 +16,12 @@
           const timer=setTimeout(()=>{a.pause();a.removeAttribute('src');a.load();reject(new Error('Sound timeout'));},25000);
           const finish=fn=>{clearTimeout(timer);a.oncanplaythrough=a.onerror=null;fn();};
           a.oncanplaythrough=()=>finish(resolve);a.onerror=()=>finish(()=>reject(new Error('Sound unavailable')));
-          a.src=src;a.load();
+          a.src=src+'?vn-audio='+Date.now();a.load();
         });prepared.set(name,{audio:a});
       }else{
         const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),25000);
         try{
-          const response=await fetch(src,{signal:controller.signal});if(!response.ok)throw new Error('Sound HTTP '+response.status);
+          const response=await fetch(src,{signal:controller.signal,cache:'reload'});if(!response.ok)throw new Error('Sound HTTP '+response.status);
           const buffer=await audioContext().decodeAudioData(await response.arrayBuffer());
           if(!buffer.length)throw new Error('Empty sound');prepared.set(name,{buffer});
         }finally{clearTimeout(timer);}
@@ -39,7 +39,7 @@
   function ambience(name){if(name===active)return;ambient.pause();active=name;fadeMusic(['house','kitchen','program'].includes(name)?.15:0);if(name==='silence'){ambient.removeAttribute('src');ambient.load();return;}ambient.src=`assets/generated/sfx/ambient-${name}.wav`;ambient.volume=muted?0:volume*(levels[name]||.2);if(unlocked&&!muted)attempt(ambient);}
   function effect(name){
     if(!unlocked||muted)return;const cached=prepared.get(name);
-    if(cached?.buffer&&context?.state==='running'){
+    if(cached?.buffer&&context){
       const source=context.createBufferSource(),gain=context.createGain();source.buffer=cached.buffer;gain.gain.value=volume*.6;source.connect(gain);gain.connect(context.destination);
       const entry={source,gain};effects.add(entry);source.onended=()=>{effects.delete(entry);source.disconnect();gain.disconnect();};source.start();return;
     }

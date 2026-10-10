@@ -14,8 +14,9 @@
   resetReady();
   function snapshot(){const all=[...records.values()];return {status,total:all.length,loaded:all.filter(r=>r.status==='ready').length,images:all.filter(r=>r.type==='image').length,failures:all.filter(r=>r.status==='error').map(r=>r.src),records:all.map(r=>({src:r.src,type:r.type,status:r.status,attempts:r.attempts,decoded:r.type==='image'?Boolean(r.image?.complete&&r.image.naturalWidth):r.status==='ready'}))};}
   function render(){
-    const s=snapshot();panel.hidden=status==='ready';panel.dataset.status=status;progress.max=s.total;progress.value=s.loaded;count.textContent=`${s.loaded} / ${s.total}`;
+    const s=snapshot();panel.hidden=status==='ready';panel.dataset.status=status;panel.setAttribute('aria-busy',String(running));progress.max=s.total;progress.value=s.loaded;count.textContent=`${s.loaded} / ${s.total}`;
     message.textContent=status==='error'?`有 ${s.failures.length} 项画面或声音未能载入。请检查网络后重试。`:'正在准备画面与声音，请稍候。';
+    panel.querySelector('h2').textContent=status==='error'?'录像还没有准备好':'正在准备录像';
     retry.hidden=status!=='error';retry.disabled=running;
     for(const id of ['vn-scene','title-screen','toolbar','choice-panel'])document.getElementById(id).inert=status!=='ready';
     window.dispatchEvent(new CustomEvent('vn:assets-state',{detail:s}));
@@ -47,6 +48,8 @@
     if(status==='ready'){
       // Repair markup images too, if their original request failed before a retry succeeded.
       for(const im of document.images){const r=records.get(im.getAttribute('src'));if(r?.image&&im.src!==r.image.src)im.src=r.image.src;}
+      for(const b of document.querySelectorAll('#toolbar [data-symbol]'))b.style.setProperty('--tool-icon',`url("${image(`assets/generated/ui/${b.dataset.symbol}.svg`).src}")`);
+      document.querySelector('link[rel=icon]').href=image('assets/generated/ui/favicon.svg').src;
       resolveReady();
     }
     render();
@@ -57,7 +60,7 @@
     for(;;){
       await whenReady();const r=records.get(src);
       try{await r.image.decode();return r.image;}
-      catch(e){r.status='error';r.error=e.message;status='error';resetReady();render();}
+      catch(e){r.status='error';r.error=e.message;if(status!=='error'){status='error';resetReady();}render();}
     }
   }
   window.VNAssets={getState:snapshot,whenReady,image,ensureDecoded,shocks:Object.freeze(shocks),url:src=>records.get(src)?.image?.src||src,retry:run};

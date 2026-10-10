@@ -10,9 +10,17 @@
   let mode = 'title', current = null, flags = {}, history = [], readyAt = 0, typeTimer = 0, typing = false;
   let storageWarned = false;
   let auto=false,skip=false,ctrl=false,advanceTimer=0;
-  let effectTimer=0, scareTimer=0, scareCleanup=0;
-  const scareImages={tv:'assets/generated/tv/shock.jpg',impact:'assets/generated/cg/impact-shock.jpg',cloth:'assets/generated/cg/cloth-shock.jpg'};
-  for(const src of [...Object.values(scareImages),'assets/generated/tv/cabinet.png']){const im=new Image();im.src=src;}
+  let effectTimer=0, scareRAF=0, scareToken=0, scareBusy=false;
+  let playedScares=new Set();
+  const assetsReady=()=>VNAssets.getState().status==='ready';
+  // Reuse the decoded object, including a successful retry URL. The shared
+  // renderer stays unchanged; copy its geometry onto the prepared image.
+  function preparedImage(src, template) {
+    const im=VNAssets.image(src);
+    for(const a of [...im.attributes])if(a.name!=='src')im.removeAttribute(a.name);
+    if(template)for(const a of template.attributes)if(a.name!=='src')im.setAttribute(a.name,a.value);
+    return im;
+  }
   const defaultOptions = {speed:38, volume:.55, muted:false, sudden:true, reduced:matchMedia('(prefers-reduced-motion: reduce)').matches};
   let options = {...defaultOptions};
   function read(key) {try {return JSON.parse(localStorage.getItem(STORE + ':' + key));} catch {return null;}}
@@ -28,7 +36,7 @@
   function stopAdvance(){clearTimeout(advanceTimer);advanceTimer=0;}
   function scheduleAdvance(){
     stopAdvance();controls();
-    if(mode!=='reading'||$('menu-dialog').open||current?.choices?.length)return;
+    if(!assetsReady()||scareBusy||document.hidden||mode!=='reading'||$('menu-dialog').open||current?.choices?.length)return;
     if(skip||ctrl){
       if(!readScenes.has(current.id)){skip=false;controls();return;}
       advanceTimer=setTimeout(()=>{if(typing)completeLine();next();},Math.max(65,readyAt-performance.now()));
@@ -58,30 +66,57 @@
     },speed);
   };
   function completeLine() {clearInterval(typeTimer);typing=false;const p=document.querySelector('.vn-text');if (p && current) p.textContent=current.dialogue?.text || '';}
-  function snapshot() {return {version:1, scene:current?.id, flags:{...flags}, history:history.slice(-500), time:new Date().toISOString()};}
+  function snapshot() {return {version:1, scene:current?.id, flags:{...flags}, history:history.slice(-500), playedScares:[...playedScares], time:new Date().toISOString()};}
   function validSave(save) {
     return save && save.version===1 && byId.has(save.scene) && save.flags && typeof save.flags==='object' && !Array.isArray(save.flags) &&
       Object.entries(save.flags).every(([k,v])=>flagNames.includes(k) && typeof v==='boolean') && Array.isArray(save.history) &&
-      save.history.length<=500 && save.history.every(x=>typeof x==='string' && byId.has(x));
+      save.history.length<=500 && save.history.every(x=>typeof x==='string' && byId.has(x)) &&
+      (save.playedScares===undefined || (Array.isArray(save.playedScares)&&save.playedScares.length<=3&&save.playedScares.every(id=>byId.get(id)?.scare)));
   }
   function restore(save) {
+    if(!assetsReady())return false;
     if (!validSave(save)) {toast('这个存档不可读取，未更改当前进度。');return false;}
-    flags={...save.flags};history=[...save.history];mode='reading';$('menu-dialog').close();VNAudio.unlock();show(save.scene,false);return true;
+    flags={...save.flags};history=[...save.history];playedScares=new Set(save.playedScares||[]);mode='reading';$('menu-dialog').close();VNAudio.unlock();show(save.scene,false);return true;
   }
   function clearScare(){
-    clearTimeout(scareTimer);clearTimeout(scareCleanup);stage.classList.remove('scare-lead','scare-hit');
+    scareToken++;cancelAnimationFrame(scareRAF);scareRAF=0;scareBusy=false;stage.classList.remove('scare-lead','scare-hit','scare-paused');
     stage.querySelectorAll('.scare-frame').forEach(e=>e.remove());delete stage.dataset.scare;
   }
-  function scare(kind){
-    stage.dataset.scare=kind;stage.classList.add('scare-lead');
-    scareTimer=setTimeout(()=>{
-      stage.classList.remove('scare-lead');stage.classList.add('scare-hit');
-      const im=document.createElement('img');im.className='scare-frame';im.src=scareImages[kind];im.alt='';im.setAttribute('aria-hidden','true');stage.append(im);
-      VNAudio.effect('shock-'+kind);
-      scareCleanup=setTimeout(clearScare,kind==='cloth'?540:270);
-    },kind==='cloth'?520:330);
+  async function scare(kind){
+    const token=++scareToken,sceneId=current.id;
+    scareBusy=true;stopAdvance();
+    const alive=()=>token===scareToken&&mode==='reading'&&current?.id===sceneId&&!$('menu-dialog').open&&options.sudden&&!options.reduced;
+    const im=await VNAssets.ensureDecoded(VNAssets.shocks[kind]);
+    if(!alive())return;
+    preparedImage(VNAssets.shocks[kind]);im.className='scare-frame';im.alt='';im.setAttribute('aria-hidden','true');
+    im.style.animation='none';im.style.opacity='0';stage.append(im);
+    // Two paint opportunities before lead/hit. RAF time only counts while the
+    // tab is visible, so background throttling cannot consume the whole shock.
+    let paints=0,phase='staging',elapsed=0,last=0;
+    const tick=now=>{
+      if(!alive()){clearScare();scheduleAdvance();return;}
+      if(document.hidden){last=0;scareRAF=requestAnimationFrame(tick);return;}
+      const dt=last?Math.min(now-last,50):0;last=now;
+      if(phase==='staging'&&++paints>=2){phase='lead';elapsed=0;stage.dataset.scare=kind;stage.classList.add('scare-lead');}
+      else if(phase==='lead'){
+        elapsed+=dt;
+        if(elapsed>=(kind==='cloth'?520:330)){
+          phase='hit';elapsed=0;stage.classList.remove('scare-lead');stage.classList.add('scare-hit');
+          im.style.removeProperty('animation');im.style.removeProperty('opacity');VNAudio.effect('shock-'+kind);
+          window.dispatchEvent(new CustomEvent('vn:scare-hit',{detail:{kind,scene:sceneId}}));
+        }
+      }else if(phase==='hit'){
+        elapsed+=dt;
+        if(elapsed>=(kind==='cloth'?540:270)){
+          playedScares.add(sceneId);clearScare();write('auto',snapshot());scheduleAdvance();return;
+        }
+      }
+      scareRAF=requestAnimationFrame(tick);
+    };
+    scareRAF=requestAnimationFrame(tick);
   }
   function show(id, record=true) {
+    if(!assetsReady())return false;
     const scene=byId.get(id); if (!scene) return false;
     if (document.activeElement instanceof HTMLElement) document.activeElement.blur();
     current=scene; mode='reading';
@@ -93,7 +128,9 @@
     }
     // Renderer reads its project model; use a temporary view for conditional copy.
     const index=project.scenes.findIndex(s=>s.id===id);
-    const source=project.scenes[index];project.scenes[index]=displayed;
+    const source=project.scenes[index];project.scenes[index]={...displayed,
+      background:displayed.background?{...displayed.background,src:displayed.background.src?VNAssets.url(displayed.background.src):undefined}:undefined,
+      character:displayed.character?{...displayed.character,src:displayed.character.src?VNAssets.url(displayed.character.src):undefined}:undefined};
     originalGo(id);project.scenes[index]=source;current=displayed;
     clearScare();
     readyAt=performance.now()+Math.max(scene.holdMs||0,scene.scare?1150:0);
@@ -105,7 +142,10 @@
     $('reading-header').hidden=!(scene.location||scene.clock);
     stage.classList.toggle('fear',Boolean(scene.fear));stage.classList.toggle('pressure',Boolean(scene.pressure));
     stage.dataset.bg=scene.closeTV?'tv-close':'';
-    if(scene.closeTV) $('vn-scene').querySelector('.vn-background').src='assets/generated/bg/tv-close.svg';
+    for(const im of $('vn-scene').querySelectorAll('img')){
+      const src=im.classList.contains('vn-background')?(scene.closeTV?'assets/generated/bg/tv-close.svg':scene.background.src):scene.character.src;
+      im.replaceWith(preparedImage(src,im));
+    }
     decorate(scene);
     clearTimeout(effectTimer);stage.classList.remove('impact','cloth-fall','signal-loss');
     const previousEffect=$('vn-scene').querySelector('.shot-effect');if(previousEffect)previousEffect.remove();
@@ -118,7 +158,7 @@
     }
     VNAudio.ambience(scene.audio || 'quiet');
     if (record && scene.sfx) VNAudio.effect(scene.sfx);
-    if(record&&scene.scare&&options.sudden&&!options.reduced)scare(scene.scare);
+    if(scene.scare&&(record||!playedScares.has(scene.id))&&options.sudden&&!options.reduced){if(record)playedScares.delete(scene.id);scare(scene.scare);}
     renderChoices();
     write('auto',snapshot());
     scheduleAdvance();
@@ -127,8 +167,8 @@
   function decorate(scene) {
     if (!scene.tv) return;
     const frame=document.createElement('div');frame.className='tv-frame '+scene.tv;
-    const cabinet=document.createElement('img');cabinet.className='tv-cabinet';cabinet.src='assets/generated/tv/cabinet.png';cabinet.alt='';
-    const img=document.createElement('img');img.className='tv-picture';img.src=`assets/generated/tv/${scene.tv}.svg`;
+    const cabinet=preparedImage('assets/generated/tv/cabinet.png');cabinet.className='tv-cabinet';cabinet.alt='';
+    const img=preparedImage(`assets/generated/tv/${scene.tv}.svg`);img.className='tv-picture';
     img.alt=scene.tv==='cartoon'?'电视里两个手绘老人，一左一右，直视镜头':'家庭录像里的两个亲戚，一左一右';
     const noise=document.createElement('div');noise.className='tv-noise';noise.setAttribute('aria-hidden','true');
     const glass=document.createElement('div');glass.className='tv-glass';glass.append(img,noise);
@@ -144,12 +184,12 @@
       const button=document.createElement('button');button.dataset.choice=choice.key || String(i);
       const number=document.createElement('span');number.className='choice-number';number.textContent=String(i+1).padStart(2,'0');
       button.append(number,document.createTextNode(choice.label));
-      button.onclick=()=> {if (mode!=='reading'||$('menu-dialog').open||performance.now()<readyAt) return;completeLine();rememberRead();if (choice.set) Object.assign(flags,choice.set);VNAudio.unlock();show(choice.to);};
+      button.onclick=()=> {if (!assetsReady()||scareBusy||mode!=='reading'||$('menu-dialog').open||performance.now()<readyAt) return;completeLine();rememberRead();if (choice.set) Object.assign(flags,choice.set);VNAudio.unlock();show(choice.to);};
       panel.append(button);
     });
   }
   function next() {
-    if (mode!=='reading'||$('menu-dialog').open||performance.now()<readyAt) return;
+    if (!assetsReady()||scareBusy||mode!=='reading'||$('menu-dialog').open||performance.now()<readyAt) return;
     VNAudio.unlock();
     if (typing) {completeLine();return;}
     if (current.choices?.length) return;
@@ -162,7 +202,7 @@
   // Direct scene selection remains available to the editor/diagnostics. Gameplay
   // always enters through the authored graph, rather than the linear timeline.
   VNPlayer.goToScene=id=>show(id);
-  function start() {flags={};history=[];mode='reading';VNAudio.unlock();show(project.scenes[0].id);}
+  function start() {if(!assetsReady())return;flags={};history=[];playedScares=new Set();mode='reading';VNAudio.unlock();show(project.scenes[0].id);}
   function title() {
     clearScare();clearTimeout(effectTimer);stage.classList.remove('impact','cloth-fall','signal-loss');
     auto=false;skip=false;ctrl=false;stopAdvance();controls();
@@ -170,7 +210,7 @@
     $('choice-panel').hidden=true;$('ending-screen').hidden=true;$('title-screen').hidden=false;
     for (const id of ['toolbar','reading-header','reading-hint']) $(id).hidden=true;
     $('vn-scene').replaceChildren();const image=document.createElement('img');image.className='vn-layer vn-background';image.src='assets/generated/bg/living.svg';image.alt='午后的老住宅客厅';$('vn-scene').append(image);
-    $('vn-scene').style.transform='none';VNAudio.stop();document.title='下午的节目';$('continue-button').disabled=!validSave(read('auto'));
+    $('vn-scene').style.transform='none';VNAudio.stop();document.title='下午的节目';assetControls();
   }
   function finish() {
     clearScare();
@@ -195,7 +235,7 @@
       const row=document.createElement('div');row.className='save-row';
       const save=read(slot), valid=validSave(save), label=slot==='auto'?'自动存档':`存档 ${slot.slice(-1)}`;
       const preview=document.createElement('div');preview.className='save-preview';
-      if(valid){const im=document.createElement('img');im.src=byId.get(save.scene).background?.src||'assets/generated/bg/black.svg';im.alt='';preview.append(im);}
+      if(valid){const im=document.createElement('img');im.src=VNAssets.url(byId.get(save.scene).background?.src||'assets/generated/bg/black.svg');im.alt='';preview.append(im);}
       const number=document.createElement('span');number.textContent=slot==='auto'?'AUTO':`0${slot.slice(-1)}`;preview.append(number);
       const info=document.createElement('p');
       info.textContent=valid?`${byId.get(save.scene).location || '亲戚家'} · ${new Date(save.time).toLocaleString('zh-CN')}`:save?'存档已损坏':'空槽位';
@@ -242,9 +282,14 @@
   $('skip-button').onclick=()=>{skip=!skip;auto=false;$('skip-button').blur();if(skip&&!readScenes.has(current.id))toast('这里还没有读过。快进会停在新内容前。');scheduleAdvance();};
   $('title-button').onclick=()=>{$('menu-dialog').close();title();};$('ending-title-button').onclick=title;
   $('close-dialog').onclick=()=>$('menu-dialog').close();
-  $('menu-dialog').addEventListener('close',()=>{if(!$('menu-dialog').open){if(document.activeElement instanceof HTMLElement)document.activeElement.blur();scheduleAdvance();}});
+  $('menu-dialog').addEventListener('close',()=>{if(!$('menu-dialog').open){if(document.activeElement instanceof HTMLElement)document.activeElement.blur();if(mode==='reading'&&current?.scare&&!scareBusy&&!playedScares.has(current.id)&&options.sudden&&!options.reduced)scare(current.scare);scheduleAdvance();}});
   $('menu-dialog').addEventListener('click',e=>{if (e.target===$('menu-dialog')) {const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)e.target.close();}});
   addEventListener('keydown',event=> {
+    if(!assetsReady()){
+      if(event.target.closest('#asset-retry')){event.stopImmediatePropagation();return;}
+      if(['Space','Enter','Escape','ControlLeft','ControlRight'].includes(event.code))event.preventDefault();
+      event.stopImmediatePropagation();return;
+    }
     if(event.code==='ControlLeft'||event.code==='ControlRight'){if(mode==='reading'&&!event.repeat&&!$('menu-dialog').open){ctrl=true;auto=false;scheduleAdvance();}return;}
     if (event.code==='Escape') {event.preventDefault();event.stopImmediatePropagation();if ($('menu-dialog').open) $('menu-dialog').close();else settings();}
     else if (event.target.closest('button,dialog')) event.stopImmediatePropagation();
@@ -252,6 +297,9 @@
   addEventListener('keyup',e=>{if(e.code==='ControlLeft'||e.code==='ControlRight'){ctrl=false;scheduleAdvance();}});
   addEventListener('blur',()=>{ctrl=false;skip=false;stopAdvance();controls();});
   addEventListener('focus',scheduleAdvance);
-  window.AfternoonGame={getState:()=>({mode,scene:current?.id,flags:{...flags},typing,history:[...history],options:{...options},auto,skip,ctrl,readScenes:[...readScenes]})};
+  function assetControls(){ $('start-button').disabled=!assetsReady();$('continue-button').disabled=!assetsReady()||!validSave(read('auto')); }
+  addEventListener('vn:assets-state',()=>{assetControls();if(!assetsReady())stopAdvance();else scheduleAdvance();});
+  document.addEventListener('visibilitychange',()=>{stage.classList.toggle('scare-paused',document.hidden);if(document.hidden)stopAdvance();else scheduleAdvance();});
+  window.AfternoonGame={getState:()=>({mode,scene:current?.id,flags:{...flags},typing,history:[...history],options:{...options},auto,skip,ctrl,scareBusy,playedScares:[...playedScares],readScenes:[...readScenes]})};
   applyOptions();title();
 })();
