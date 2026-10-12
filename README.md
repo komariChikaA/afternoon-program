@@ -4,7 +4,7 @@
 
 ## 立即游玩
 
-在线版：**https://komariChikaA.github.io/afternoon-program/**。源码与任务记录：[GitHub 仓库](https://github.com/komariChikaA/afternoon-program)、[发布 Issue #1](https://github.com/komariChikaA/afternoon-program/issues/1)。
+在线版：** https://komariChikaA.github.io/afternoon-program/ ** 。源码与任务记录： [GitHub 仓库](https://github.com/komariChikaA/afternoon-program) 、 [发布 Issue #1](https://github.com/komariChikaA/afternoon-program/issues/1)。
 
 双击 `启动游戏.cmd` 或用现代 Chrome / Edge 打开 `app.html`。**不需要 npm install、构建、网络、控制台或开发工具。**
 
